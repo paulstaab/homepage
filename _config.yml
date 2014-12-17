@@ -26,12 +26,14 @@ colors:  #in hex code if not noted else
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
+  - title: github
+    url: https://github.com/paulstaab
   - title: google-plus
     url: https://plus.google.com/+PaulStaab
   - title: twitter
     url: https://twitter.com/paulstaab 
-  - title: lindedin
-    url: https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile
+  - title: linkedin
+    url: https://de.linkedin.com/in/paulstaab
   #- title: tumblr
   #  url: 
     
