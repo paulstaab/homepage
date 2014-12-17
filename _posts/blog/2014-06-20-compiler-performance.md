@@ -2,7 +2,9 @@
 layout:      post
 title:       "Benchmarking C++ Compilers. A Real World Example."
 description: 
-categories:  [Linux & Open Source]
+categories:  
+- Linux & Open Source
+- blog
 tags:        [compiler, benchmark, scrm]
 image:
   feature: 

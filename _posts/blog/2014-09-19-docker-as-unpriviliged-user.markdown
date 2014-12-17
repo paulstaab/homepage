@@ -1,13 +1,19 @@
 ---
-layout:      post
-title:       "Using Unprivileged Users in Docker Containers"
+layout: post
+title: "Using Unprivileged Users in Docker Containers"
+date: 2014-09-19 16:54:46
+author: Paul
 description: "Increase the security of docker containers by switching to an unprivileged user."
-categories:  [Linux & Open Source]
-tags:        [compiler, benchmark, scrm]
-image:
-  feature: 
-  credit: 
-  creditlink: 
+categories:  
+  - blog
+  - Linux & Open Source
+  - scrm
+tags:        
+  - compiler 
+  - benchmark 
+  - scrm
+img: post01.jpg
+thumb: thumb01.jpg
 ---
 
 Last month Jérôme Petazzoni 

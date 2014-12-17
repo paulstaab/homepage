@@ -3,7 +3,9 @@ title: "G&uuml;nstige SMS mit Android"
 type: post
 layout: post
 status: publish
-categories:     [Linux & Open Source]
+categories:     
+- Linux & Open Source
+- blog
 image:
   feature:    android.jpg
   credit:     asirap (CC-BY-NC-SA) 

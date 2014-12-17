@@ -4,7 +4,9 @@ title:       "Disabling Android Bloatware"
 description: "Most Android devices ship with a lot of pre-installed crap. This
               Article deals with getting rid of it."
 modified:    2013-12-07
-categories:  [Linux & Open Source]
+categories:  
+- Linux & Open Source
+- blog
 tags:        [Android, Bloatware]
 image:
   feature:    android.jpg
