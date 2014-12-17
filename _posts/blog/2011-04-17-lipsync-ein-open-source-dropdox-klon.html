@@ -1,0 +1,12 @@
+--- 
+title: "lipsync: Ein Open-Source Dropdox Klon"
+type: post
+layout: post
+status: publish
+categories:     [Linux & Open Source]
+---
+Zur Zeit benutzte ich das kleine Programm <a title="Unison homepage" href="http://www.cis.upenn.edu/~bcpierce/unison/" target="_blank">unison</a> um die Daten auf meinem Netbook und Desktop zu synchronisieren. Dazu gleichen beide mein Homeverzeichniss mit meinen kleinen NAS (eine Seagate Dockstar mit Debian Lenny) ab. Das funktioniert auch problemlos, der Nachteil ist nur, dass es bei jeder Sync das komplette Homeverzeichnis nach neuen oder geänderten Dateien durchsucht, was normalerweise mehr Zeit in Anspruch nimmt als das eigentliche Backup. Auch wenn das alles automatisiert im Hintergrund abläuft, habe ich mich gestern mal nach einer schöneren Lösung umgesehen.
+
+Eigentlich ist mir das Prinzip von Dropbox, Ubuntu One etc. ganz sympathisch, die das Dateisystem auf den Clients live auf Änderungen überwachen (eine Funktion, die der Linux-Kernel mit <a title="Beschreibung von Inotify auf Wikipedia" href="http://en.wikipedia.org/wiki/Inotify" target="_blank">inotify</a> von Haus aus mitbringt) und diese dann direkt zum Server übertragen. Somit spart man sich das durchrödeln des kompletten Datenbestandes und minimiert nebenbei auch noch die Gefahr, die Änderungen zwischen zwei Syncs zu verlieren. Leider sind die beiden Dienste zu teuer, als dass ich sie sinnvoll nutzen könnte.
+
+Gestern bin ich dann über <a title="lsyncd auf Google Code" href="http://code.google.com/p/lsyncd/" target="_blank">lsyncd</a> gestolpert, das ein solches System zum einfachen Selbsthosten bauen will/schon gebaut hat. Ich habe das bis jetzt noch nicht ausprobiert, aber es liest sich auf jeden Fall schon mal sehr gut! Mehr Infos gibt es im <a href="http://fak3r.com/geek/howto-build-your-own-open-source-dropbox-clone" target="_blank">Blog von Fak3r</a>, dem Programmierer dahinter. Hoffentlich schließen sich noch ein paar Leute dem Projekt an, z.B. wäre ein kleiner optionaler für die Client super. Sobald mir meine Diplomarbeit wieder etwas mehr Zeit lässt, werde ich das auf jeden Fall gründlich ausprobieren, und hier über meine Erfahrungen berichten.

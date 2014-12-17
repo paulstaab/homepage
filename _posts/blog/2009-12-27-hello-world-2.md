@@ -1,0 +1,16 @@
+--- 
+title: Hello World...
+categories:     [Personal]
+type: post
+layout: post
+---
+
+Nachdem ich "<a href="http://www.w3.org/2008/Talks/1022-Steven_Pemberton/" target="_blank">Why you should have a Web Site</a>" 
+gelesen habe (sehr zu empfehlen), möchte ich der Aufforderung folgen und habe deshalb auf 
+meiner Domain, die ich seit längern nur für Emails nutze, eine Blogsoftware installiert.
+
+Ich werde hier vermutlich in unregelmäßigen Abständen kurz meine Meinung - wohl vor allem zu 
+ausgewählten Bereichen der Mathematik, zu Linux/GNU und freier Software im Allgemeinen, 
+Politik und allem was mir sonst noch so in den Sinn kommt - je nach Lust und Laune 
+in englischer oder in deutscher Sprache kund tun. 
+Vielleicht interessiert ja das eine oder andere sogar jemanden...
