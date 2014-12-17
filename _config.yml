@@ -4,8 +4,8 @@
 title: Paul Staab
 description: "Personal Homepage, Blog and Projects of Paul Staab."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "" #important: start with /
-url: "https://paulstaab.github.io/solid-jekyll"
+baseurl: "/hp" #important: start with /
+url: "https://paulstaab.de"
 
 # Build settings
 markdown: kramdown
