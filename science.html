@@ -1,0 +1,54 @@
+---
+layout: default 
+title: Science
+permalink: /science/
+image:
+  feature: science.jpg
+  credit: chasblackman 
+  creditlink: https://secure.flickr.com/photos/chasblackman 
+---
+
+{% include wrap.html %}
+
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-5">
+            <img class="img-responsive" src="{{ "/assets/img/science.jpg" | prepend: site.baseurl }}" alt="">
+            <small>
+              By <a href='https://www.flickr.com/photos/mars_p/'>Mars P.</a>,
+              <a href='https://creativecommons.org/licenses/by/2.0'>CC BY 2.0</a>, 
+              unmodified.
+            </small>
+        </div>
+        <div class="col-lg-7">
+          <h2>Latest Publications</h2>
+          {% for paper in site.categories['publication'] limit:4 %}
+             <! -- Publication -->
+               <p><b>{{ paper.title }}.</b>
+               {{ paper.author }}. 
+               {{ paper.journal }}.
+               <a href="{{ paper.url_web  }}">[Link]</a> 
+               <a href="{{ paper.url_pdf  }}">[PDF]</a></p> 
+          {% endfor %}
+          <center><p><a href="http://scholar.google.de/citations?user=aRPHGTAAAAAJ">
+              Complete list at Google Scholar</a></p></center>
+        </div>
+    </div><! --/row -->
+</div>
+
+
+<!--
+## Software
+- [**Jaatha**](http://evol.bio.lmu.de/_statgen/software/jaatha/). 
+  A simulation based composite-likelihood method to fix an evolutionary model to genetic data.
+- [**scrm**](https://scrm.github.io).
+  An efficient coalescent simulator for genome-scale sequences.
+- **mrj – Muller’s ratchet in Java**. 
+  Simulates a population of haploids undergoing 
+  [Muller's Ratchet](https://secure.wikimedia.org/wikipedia/en/wiki/Muller%27s_ratchet)
+  Capable of compensatory mutations. [Runnable jar file](/dl/science/mrj.jar) – [Source Code](/dl/science/mrj-src.tar.gz)
+- [**SynBioWave**](http://www.synbiowave.org).
+    A collaborative synthetic biological software suite, based on
+    discontinued Google Wave.
+-->
+
