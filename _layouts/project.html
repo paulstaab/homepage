@@ -7,32 +7,20 @@ layout: default
 <div class="container mt">
     <div class="row">
 
-        {% include carousel.html %}
-
         <div class="col-lg-5 col-lg-offset-1">
             <div class="spacing"></div>
-
             {{ content }}
-
         </div>
+
         <div class="col-lg-4 col-lg-offset-1">
-            <div class="spacing"></div>
+            <img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}" alt="Logo">
             <h4>Project Details</h4>
             <div class="hline"></div>
             <p><b>Type:</b> {{ page.type }}</p>
             <p><b>Date:</b> {{ page.time }}</p>
             <p><b>Languages:</b> {{ page.languages | array_to_sentence_string }}</p>
-            <p><b>Languages:</b> {% for lang in page.languages %}
-                <div class="btn btn-theme">{{ lang }}</div>	         
-                {% endfor %}
-            </p>
+            <p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
             <p><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>
-            <p><b>Tags:</b><br> {% for tag in page.tags %}
-                <a class="btn btn-theme" href="{{ '/category/#'  | prepend:site.baseurl  }}{{ tag }}" role="button">{{ tag }}</a>	         
-                {% endfor %}
-            </p>
         </div>
     </div><! --/row -->
 </div><! --/container -->
-	 
-{% include portfolio.html title="Related Works." limit=5 %}
