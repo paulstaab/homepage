@@ -19,10 +19,9 @@ layout: default
             <div class="spacing"></div>
             <h4>Project Details</h4>
             <div class="hline"></div>
-            <p><b>Date:</b> {{ page.date | date: "%b %-d, %Y" }}</p>
-            <p><b>Categories:</b> {{ page.categories }}</p>
-            <p><b>Languages:</b> {{ page.languages }}</p>
-            <p><b>Tagged:</b> </p>
+            <p><b>Date:</b> {{ page.date }}</p>
+            <p><b>Languages:</b> {{ page.languages | array_to_sentence_string }}</p>
+            <p><b>Tagged:</b> {{ page.tags | array_to_sentence_string }}</p>
             <p><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>
         </div>
     </div><! --/row -->
