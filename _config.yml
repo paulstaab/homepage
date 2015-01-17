@@ -5,7 +5,7 @@ title: Paul Staab
 description: "Personal Homepage, Blog and Projects of Paul Staab."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "/hp" #important: start with /
-url: "https://paulstaab.de"
+url: "http://paulstaab.de"
 
 # Build settings
 markdown: kramdown
@@ -37,7 +37,5 @@ social:
   #- title: tumblr
   #  url: 
     
-# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
-address:
-email: 
-tel: 
+about: "I'm a Phd Student in Statistical Genetics in Munich, Germany."
+
