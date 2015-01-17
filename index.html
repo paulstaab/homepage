@@ -8,18 +8,10 @@ permalink: /
 
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-4 col-lg-offset-1">
+        <div class="col-lg-7 col-lg-offset-1">
             <h4>About Me.</h4>
             <p>{{ site.about }}</p>
             <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
         </div>
 
         <div class="col-lg-3">
