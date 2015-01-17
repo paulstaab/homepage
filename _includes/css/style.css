@@ -209,7 +209,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background: url(../img/cover.jpg) no-repeat center top;
+	background: url(../img/cover.jpg) no-repeat center center fixed;
     padding-top: 50px;
     padding-bottom: 50px;
 	text-align:center;
@@ -227,28 +227,6 @@ a:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-.intro-message {
-  position: relative;
-  padding-top: 12%;
-  padding-bottom: 15%;
-}
-
-.intro-message > h1 {
-    margin: 0px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 5em;
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #F8F8F8;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #headerwrap h3, h5 {

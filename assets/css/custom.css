@@ -1,0 +1,29 @@
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  color: #FFF;
+}
+
+.intro-message > h1 {
+  margin: 10px 0px 10px 0px !important;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 3em;
+}
+
+.intro-message > h2 {
+  margin: 10px 0px 10px 0px !important;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 0px;
+}
+
+.intro-message > ul {
+  margin-top: 20px;
+}
+
+.intro-divider {
+  width: 400px;
+  border-top: 1px solid #F8F8F8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+

@@ -1,7 +1,12 @@
----
-layout: default
----
-{% include header.html %}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
 
-  {{ content }}
+  <body id="headerwrap">
+    {% include nav.html %}
 
+    {{ content }}
+
+    {% include js.html %}
+  </body>
+</html>
