@@ -4,7 +4,7 @@
 title: Paul Staab
 description: "Personal Homepage, Blog and Projects of Paul Staab."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/hp" #important: start with /
+baseurl: "/" #important: start with /
 url: "http://paulstaab.de"
 
 # Build settings
