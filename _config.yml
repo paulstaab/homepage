@@ -1,7 +1,7 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: Paul Staab
+title: "PAUL STAAB"
 description: "Personal Homepage, Blog and Projects of Paul Staab."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "/." #important: start with /
