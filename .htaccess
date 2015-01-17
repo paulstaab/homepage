@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^atom.xml$ http://www.paulstaab.de/feed.xml [R=permanent,L]
+RewriteRule ^rss/$ http://www.paulstaab.de/feed.xml [R=permanent,L]
