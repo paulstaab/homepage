@@ -12,8 +12,8 @@ tags:
   - compiler 
   - benchmark 
   - scrm
-img: post01.jpg
-thumb: thumb01.jpg
+img:
+thumb:
 ---
 
 Last month Jérôme Petazzoni 

@@ -6,9 +6,7 @@ categories:
 - blog
 type: post
 layout: post
-img: /img/posts/2012/jaathaLogo.png
-img-desc: The Jaatha Logo 
-img-copyright: ©Lisha Mathew and Paul Staab.
+img:
 ---
 
 <p>After literally months of trial and error, I finally managed to run a large analysis using our program <a href="http://evol.bio.lmu.de/_statgen/software/jaatha/">Jaatha</a> on my new local supercomputer, <a href="http://de.wikipedia.org/wiki/SuperMUC">superMUC</a>. Jaatha is written in <a href="http://www.r-project.org/">R</a> (with the performance critical part implemented in C and C++) and normally does not require a super computer at all. However, we wanted to conduct a huge <a href="https://en.wikipedia.org/wiki/Likelihood-ratio_test">likelihood ratio test</a> using a computationally demanding finite sites model; so it came in handy when Europe's fastest computer opened just a few kilometers away. As there is very little written about running R on a supercomputer, I want to share my solution here so that it may hopefully be a bit easier for others to do something similar.</p>

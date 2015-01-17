@@ -8,10 +8,7 @@ categories:
 - Linux & Open Source
 - blog
 tags:        [Android, Bloatware]
-image:
-  feature:    android.jpg
-  credit:     asirap (CC-BY-NC-SA) 
-  creditlink: https://secure.flickr.com/photos/asirap/
+img:
 ---
 
 <section id="table-of-contents" class="toc">
