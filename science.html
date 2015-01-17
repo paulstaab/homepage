@@ -22,7 +22,7 @@ image:
         </div>
         <div class="col-lg-7">
           <h2>Latest Publications</h2>
-          {% for paper in site.categories['publication'] limit:4 %}
+          {% for paper in site.categories['publication'] limit:5 %}
              <! -- Publication -->
                <p><b>{{ paper.title }}.</b>
                {{ paper.author }}. 
