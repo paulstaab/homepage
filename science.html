@@ -3,78 +3,68 @@ layout: default
 title: Science
 permalink: /science/
 image:
-  feature: science.jpg
-  credit: chasblackman 
-  creditlink: https://secure.flickr.com/photos/chasblackman 
+    feature: science.jpg
+    credit: chasblackman 
+    creditlink: https://secure.flickr.com/photos/chasblackman 
 ---
 
 {% include wrap.html %}
 
-<div class="science-papers bgimg">
-<div class="container">
-    <div class="row">
-        <div class="col-lg-7 col-lg-offset-5 transparent">
-          <h2>Latest Publications</h2>
-          {% for paper in site.categories['publication'] limit:5 %}
-             <! -- Publication -->
-               <p><b>{{ paper.title }}.</b>
-               {{ paper.author }}. 
-               {{ paper.journal }}.
-               <a href="{{ paper.url_web  }}">[Link]</a> 
-               <a href="{{ paper.url_pdf  }}">[PDF]</a></p> 
-          {% endfor %}
-          <center><p><a href="http://scholar.google.de/citations?user=aRPHGTAAAAAJ">
-              Complete list at Google Scholar</a></p></center>
-        </div>
-    </div><! --/row -->
-</div>
-<span class="bgimgcredits">Image by <a href='https://www.flickr.com/photos/mars_p/'>Mars P.</a>,
-                           <a href='https://creativecommons.org/licenses/by/2.0'>CC BY 2.0</a>,
-                           unmodified.</span>
-</div>
-
-<div class="science-software bgimg">
-<div class="container">
-    <div class="row">
-        <div class="col-lg-7 transparent">
-        <h2>Software</h2>
-        <p>I am involved in the development of the following software
-        projects:</p>
-        <p><h3>Jaatha</h3>
-           A simulation based composite-likelihood method to fit 
-           an evolutionary model to genetic data.
-           <br>
-           <a href="http://evol.bio.lmu.de/_statgen/software/jaatha">[Link]</a> 
-           <a href="http://cran.r-project.org/web/packages/jaatha">[CRAN]</a> 
-           <a href="https://github.com/paulstaab/jaatha">[Source]</a> 
-        </p>
-        <p><h3>scrm</h3>
-           An efficient coalescent simulator for genome-scale sequences.
-           <br>
-           <a href="https://scrm.github.io">[Link]</a> 
-           <a href="https://github.com/scrm/scrm">[Source]</a> 
-        </p>
-        <p><h3>mrj</h3>
-           Simulates a population of haploids undergoing 
-           <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Muller%27s_ratchet">Muller's Ratchet</a>.
-           Capable of compensatory mutations. 
-           <br>
-           <a href="/dl/science/mrj.jar">[Runnable jar file]</a> 
-           <a href="/dl/science/mrj-src.tar.gz">[Source]</a>
-        </p>
-        <p><h3>SynBioWave</h3>
-           A collaborative synthetic biological software suite, based on
-           discontinued Google Wave.
-           <br>
-           <a href="http://www.synbiowave.org">[Link]</a>
-        </p>
-        </div>
+<div class="container mtb">
+  <div class="row">
+    <div class="jumbotron">
+      <h2>Publications</h2>
     </div>
-</div>
+
+    <! -- BLOG POSTS LIST -->
+    {% for paper in site.categories['publication'] %}
+    <div class="col-md-6">
+      <h3><a href="{{ paper.url_web  }}">{{ paper.title }}</a></h3>
+      {{ paper.author }}. 
+      {{ paper.journal }}.
+      <a href="{{ paper.url_pdf  }}">[PDF]</a>
+    </div>
+    {% endfor %}
+
+    <div class="col-md-12">
+      <center><p><a href="http://scholar.google.de/citations?user=aRPHGTAAAAAJ">
+          Complete list at Google Scholar</a></p></center>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="jumbotron">
+      <h2>Software</h2>
+    </div>
+    <div class="col-sm-6 col-md-3"><h3>Jaatha</h3>
+      A simulation based composite-likelihood method to fit 
+      an evolutionary model to genetic data.
+      <br>
+      <a href="http://evol.bio.lmu.de/_statgen/software/jaatha">[Link]</a> 
+      <a href="http://cran.r-project.org/web/packages/jaatha">[CRAN]</a> 
+      <a href="https://github.com/paulstaab/jaatha">[Source]</a> 
+    </div>
+    <div class="col-sm-6 col-md-3"><h3>scrm</h3>
+      An efficient coalescent simulator for genome-scale sequences.
+      <br>
+      <a href="https://scrm.github.io">[Link]</a> 
+      <a href="https://github.com/scrm/scrm">[Source]</a> 
+    </div>
+    <div class="col-sm-6 col-md-3"><h3>mrj</h3>
+      Simulates a population of haploids undergoing 
+      <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Muller%27s_ratchet">Muller's Ratchet</a>.
+      Capable of compensatory mutations. 
+      <br>
+      <a href="/dl/science/mrj.jar">[Runnable jar file]</a> 
+      <a href="/dl/science/mrj-src.tar.gz">[Source]</a>
+    </div>
+    <div class="col-sm-6 col-md-3"><h3>SynBioWave</h3>
+      A collaborative synthetic biological software suite, based on
+      discontinued Google Wave.
+      <br>
+      <a href="http://www.synbiowave.org">[Link]</a>
+    </div>
+  </div>
 </div>
 
-
-<!--
-- 
--->
 
