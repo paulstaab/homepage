@@ -28,7 +28,7 @@ Windows to Linux 8 years ago. Now the situation on Linux-based Android feels
 even worse than it was/is with Windows, were you could at least deinstall the
 programs, or -- even better -- go for a clean installation. 
 
-[I don't use many Google services](/2013/06/prism), as I run my own mail server and my contacts
+[I don't use many Google services](/2013/prism), as I run my own mail server and my contacts
 and calendars are synced with my private ownCloud instance. So I don't need the
 apps for Gmail, Goolge Contact/Calendar Sync, Google Picasa and so on. My
 Samsung Galaxy Node 10.1 table also came with A LOT of crap from Samsung,

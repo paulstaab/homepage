@@ -18,7 +18,7 @@ thumb:
 
 Last month Jérôme Petazzoni 
 [gave a talk](http://www.slideshare.net/jpetazzo/docker-linux-containers-and-security-does-it-add-up)
-about the security of [Docker](docker.io) containers. The maybe most important
+about the security of [Docker](https://docker.io) containers. The maybe most important
 message of his talk was that one should avoid running applications as root in
 containers wherever possible. Otherwise, it might be possible or at least easier
 for an malicious application to free itself from the containers restrictions and
