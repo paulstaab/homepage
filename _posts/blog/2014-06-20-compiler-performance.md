@@ -1,5 +1,6 @@
 ---
 layout:      post
+author:      Paul
 title:       "Benchmarking C++ Compilers. A Real World Example."
 description: 
 categories:  

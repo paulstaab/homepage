@@ -1,5 +1,6 @@
 ---
 layout:      post
+author: Paul
 title:       "Disabling Android Bloatware"
 description: "Most Android devices ship with a lot of pre-installed crap. This
               Article deals with getting rid of it."

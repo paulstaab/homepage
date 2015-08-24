@@ -7,11 +7,6 @@ description: "Increase the security of docker containers by switching to an unpr
 categories:  
   - blog
   - Linux & Open Source
-  - scrm
-tags:        
-  - compiler 
-  - benchmark 
-  - scrm
 img:
 thumb:
 ---

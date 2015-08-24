@@ -1,5 +1,6 @@
 --- 
 title: "G&uuml;nstige SMS mit Android"
+author: Paul
 type: post
 layout: post
 status: publish
