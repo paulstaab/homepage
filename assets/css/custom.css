@@ -36,22 +36,6 @@
   position: relative;
 }
 
-.science-papers {
-  background: url("../img/science.jpg") no-repeat scroll center center / cover transparent;
-  margin-top: -60px;
-}
-
-.science-software {
-  background: url("../img/source-code.jpg") no-repeat scroll center center / cover transparent;
-}
-
-.bgimgcredits {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  color: white;
-}
-
 .transparent{
   background:rgba(255,255,255,0.9);
 }
@@ -59,3 +43,4 @@
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #384452;
 }
+

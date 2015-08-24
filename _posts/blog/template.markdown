@@ -2,12 +2,18 @@
 layout: post
 title: "Time to change your apps"
 date: 2014-04-25 16:54:46
-author: Admin
+author: Paul
 categories: 
 - blog 
 - Wordpress
 - Photoshop
-img: post01.jpg
+img: 
+  file: img.jpg
+  credit: Author
+  link: Author-URL
+  license: CC BY-NC 2.0
+  license-link: https://creativecommons.org/licenses/by-nc/2.0/
+  comment: cropped
 thumb: thumb01.jpg
 ---
 

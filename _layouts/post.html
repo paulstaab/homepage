@@ -9,8 +9,11 @@ layout: default
         <! -- SINGLE POST -->
         <div class="col-lg-8">
             <! -- Blog Post  -->
-            {% if page.img %}
-            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
+            {% if page.img.file %}
+            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img.file }}">
+               <csmall class="img-copyright">Picture by <a href="{{ page.img.link }}">{{ page.img.credit }}</a>,  
+                       <a href="{{ page.img.license-link }}">{{ page.img.license }}</a>, 
+                       {{ page.img.comment }}</csmall></p>
             {% endif %}
             <a href="{{ page.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ page.title }}</h3></a>
             <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>

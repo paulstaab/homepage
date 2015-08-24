@@ -7,7 +7,13 @@ description: "Increase the security of docker containers by switching to an unpr
 categories:  
   - blog
   - Linux & Open Source
-img:
+img: 
+  file: containers.jpg
+  credit: Rafael Edwards
+  link: https://www.flickr.com/photos/rafa2010/
+  license: CC BY-NC 2.0
+  license-link: https://creativecommons.org/licenses/by-nc/2.0/
+  comment: cropped
 thumb:
 ---
 
