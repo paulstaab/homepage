@@ -19,16 +19,26 @@ image:
     <! -- BLOG POSTS LIST -->
     {% for paper in site.categories['publication'] %}
     <div class="col-md-6">
+      {% if paper.url_web %}
       <h3><a href="{{ paper.url_web  }}">{{ paper.title }}</a></h3>
-      {{ paper.author }}. 
-      {{ paper.journal }}.
-      <a href="{{ paper.url_pdf  }}">[PDF]</a>
+      {% else %}
+      <h3>{{ paper.title }}</h3>
+      {% endif %}
+
+      <p>{{ paper.author }}.<br \> 
+         {{ paper.journal }}.</p>
+      {% if paper.url_web %}
+      <a href="{{ paper.url_web  }}"><button type="button" class="btn btn-default">View Online</button></a>
+      {% endif %}
+      {% if paper.url_pdf %}
+      <a href="{{ paper.url_pdf  }}"><button type="button" class="btn btn-default">Download</button></a>
+      {% endif %}
     </div>
     {% endfor %}
 
     <div class="col-md-12">
-      <center><p><a href="http://scholar.google.de/citations?user=aRPHGTAAAAAJ">
-          Complete list at Google Scholar</a></p></center>
+      <center><a href="http://scholar.google.de/citations?user=aRPHGTAAAAAJ">
+          <button type="button" class="btn btn-default">View at Google Scholar</button></a></center>
     </div>
   </div>
 </div>
