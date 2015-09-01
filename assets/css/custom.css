@@ -1,43 +1,29 @@
-.intro-message {
-  position: relative;
-  padding-top: 20%;
-  color: #FFF;
+#intro-bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: #000 none repeat scroll 0% 0%;
 }
 
-.intro-message > h1 {
-  margin: 10px 0px 10px 0px !important;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 3em;
+#intro-bg img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  opacity: 0.4;
 }
 
-.intro-message > h2 {
-  margin: 10px 0px 10px 0px !important;
-  font-size: 1.2em;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  margin-top: 0px;
-}
-
-.intro-message > ul {
-  margin-top: 20px;
-}
-
-.intro-divider {
-  width: 400px;
-  border-top: 1px solid #F8F8F8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.bgimg {
-  text-align: center;
-  min-height: 400px;
-  width: 100%;
-  padding-top: 150px;
-  padding-bottom: 230px;
-  position: relative;
-}
-
-.transparent{
-  background:rgba(255,255,255,0.9);
+.intro-message > p {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: inherit;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {

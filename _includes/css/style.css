@@ -209,10 +209,9 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background: url(../img/cover.jpg) no-repeat center center fixed;
+	//background: url(../img/cover.jpg) no-repeat center center fixed;
     padding-top: 50px;
-    padding-bottom: 50px;
-	text-align:center;
+    padding-bottom: 0px;
 	background-attachment: relative;
 	background-position: center center;
     /* min-height: 550px; */
