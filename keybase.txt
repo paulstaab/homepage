@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/paulstaab
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://paulstaab.de
+  * I am paulstaab (https://keybase.io/paulstaab) on keybase.
+  * I have a public key with fingerprint A258 04EF 26C7 DF88 2BA3  37DC 1CC5 10B3 0830 0842
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "a25804ef26c7df882ba337dc1cc510b308300842",
+            "host": "keybase.io",
+            "key_id": "1cc510b308300842",
+            "uid": "001f97fe605d6a98072cccd00f7e2400",
+            "username": "paulstaab"
+        },
+        "service": {
+            "hostname": "paulstaab.de",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1415546175,
+    "expire_in": 157680000,
+    "prev": "8e46bb3a1567e5abcc67c0d05a02067ad582b809eb630c52fbb3c7fc3bb7c7a8",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owGbwMvMwMQoc1RgM4cBhxPj6QNfkhhC4ls9q5WS8lMqlayqlbJTwVRaZl56alFB
+UWZeiZKVUqKRqYWBSWqakVmyeUqahYVRUqKxsXlKsmFysqmhQZKxgYWxgYGFiZGS
+jlJGfjFIB9CYpMTiVL3MfKAYkBOfmQIUxaK+FCxhYGCYZmmelmpmYJpilmhpYWBu
+lJycnGJgkGaeamRiYABSWJxalJeYmwpUXZBYmlNckpiYpFSrowQULstMTgU5GmQ3
+uhK9lFSg5oKi/JL85PwcoExGSUlBsRVIZ0llAUhpeWpSPNSQ+KTMvBSgz4E6ylKL
+ijPz85SsDIEqk0syQaYamhiampqYGZqb6iilVhRkFqXGZ4JUmJqbWRgAAcie1DKg
+kRapJmZJScaJhqZm5qmmiUnJyWbmyQYpBqaJBkYGZuaJKabAILQwsExNMjM2SDY1
+SgMqTjZPSzZOSjJPNk+0UAJ5qzAvX8nKAujMxHSgkcWZ6XmJJaVFqUq1XJ1MMiwM
+jEwMbKxMoMhj4OIUgEWpkosAQ3te6vLnlxSWbz5Zc/Tn3qnb+7f+fW51dO6bQ/Hu
+GkmHPp0/XOXysXTVXI6lpWt1mXp2eMzufrwgcY2zZVCb8t3LS6vrovOPpXLobj9V
+NO1RcW/TfLtvMw8y1Xzo3tp9irflIsvPt6Z9E/YlfH+4S6yw1vrRoZ0vm9uTvM/z
+P/T6vWHL0dJrl3btrfZeZHhrpsw8Gz9jd3e94vVtEm/4vxX0+8stan+9v191Ze28
+vllbDu9b7FF3s/vTvviUym0l675WSqZk7nUUCjz25P+VEzLu86uvnnuy56pnTdza
+KwIKbk0rS35MtHigbLn/OHePHX8Ov+t2JjtLt3ch/w133HctsS/pCE+9vXKfgPuD
+MOGvayqZ4p5fm6aW2VHP53P3yXauRLnH5xL/3Fc2m3ThfJTktpwZX11Ev/JyrP+i
+9dDevelj/cQHL1J254UujmB8suFWhk0k2/OoZp+Cyfq2fFvv7ToZF9GjeP73bYGL
+HyfUr0so6axUyn7l8oZnm2W/5x/FZPn9DNOCHpyavKdzgvepXZdavi7j/N9Xrb/7
+/eaZxRlWavNPpvR4vlvj462uXnkmd+bktzpJl9vMfPfLbf7MsOTJ1ws/lyd+vGCy
+J3grd7L+xbnpM7nC00NW63X0zl5pOOWmyRqT7fKHwu5ctfux6Vkga8PnV7e/V1fI
+LD/U4tqRGPvO8lR/pwpXybolrfbrWFX8ukKOyx1M4PkEAA==
+=xF28
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/paulstaab
+
+==================================================================
+
