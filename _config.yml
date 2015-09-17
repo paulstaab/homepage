@@ -5,7 +5,7 @@ title: "PAUL STAAB"
 description: "The Personal Homepage of Paul Staab."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "/." #important: start with /
-url: "https://paulstaab.de"
+url: "http://paulstaab.de"
 
 # Build settings
 markdown: kramdown
