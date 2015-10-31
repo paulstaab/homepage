@@ -6,18 +6,18 @@ I hereby claim:
 
   * I am an admin of http://paulstaab.de
   * I am paulstaab (https://keybase.io/paulstaab) on keybase.
-  * I have a public key with fingerprint A258 04EF 26C7 DF88 2BA3  37DC 1CC5 10B3 0830 0842
+  * I have a public key with fingerprint CC33 4592 9CB2 A317 3D76  B8E0 400D 56AF E600 4AD1
 
 To do so, I am signing this object:
 
 {
     "body": {
         "key": {
-            "eldest_kid": "0101a30d66c663a434c0394c306b8d3e38953556a30f8390f1fa568d1265030a0a240a",
-            "fingerprint": "a25804ef26c7df882ba337dc1cc510b308300842",
+            "eldest_kid": "01014fe90c30bdd6451c7f43be3c086161dc43bdcc4c3d672a406dd5206f935b9ed70a",
+            "fingerprint": "cc3345929cb2a3173d76b8e0400d56afe6004ad1",
             "host": "keybase.io",
-            "key_id": "1cc510b308300842",
-            "kid": "0101a30d66c663a434c0394c306b8d3e38953556a30f8390f1fa568d1265030a0a240a",
+            "key_id": "400d56afe6004ad1",
+            "kid": "01014fe90c30bdd6451c7f43be3c086161dc43bdcc4c3d672a406dd5206f935b9ed70a",
             "uid": "001f97fe605d6a98072cccd00f7e2400",
             "username": "paulstaab"
         },
@@ -28,41 +28,35 @@ To do so, I am signing this object:
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1442610239,
+    "ctime": 1446305950,
     "expire_in": 157680000,
-    "prev": "33ca86d0d0c0bc55ebafa8c767f21316fe4277427a7fedb6f7a837c505524a6d",
-    "seqno": 11,
+    "prev": "e548d2ff07b865bf7725e83cde896e3d4aa315377d24e925c425e61bd0a82a6b",
+    "seqno": 15,
     "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: GnuPG v1
+Version: GnuPG v2
 
-owGtkn1MlVUcxy83oMkIiBVkQOFjLEcg53nO83YpMacF4jRB3nHcned5znN9gPvC
-vZdLiLBAqXDEcrMsCnmRtxXaWFYbTeJlDJVENJWwKzaRkWhmVnc2iXUeq39af3a2
-s7PzO5/v9/x+v/3efuQhg9HPnnSh+BPL8nW/iRuSIXtpz6YqSrIrlVRyFVWCHxy4
-VMEut7lEU6hkCtCARhAoPC/zPEQsZGUATawMAS+JCsRQNHGQ43jCqCI0AZVWEceL
-Cs3wHIAAAcSwAFEJlKrZLNjpcGo2N7FFDCcCFqsMLwuKKoqMhCAUFJmWZY4GEgQi
-BEBkGSLcZXfpCpKchFx4rWYnMXIxP0jvP/j/Oe/yv+wArZoEFfOAU3hkEoHAyLKs
-AKAKmIBAB13YaUNWTGgHKi91uRGSqOoEioQ9moz1zuql/BtZq2AidjjtbrtsLyUv
-u9xuR7IudFc6dLICS+a/PcySZlNIH4nAg50uzW6jkmlCym5NN6VZluFpwEBTAoVf
-dWhObNZ0ghN4EZClf4M9xBJCGYm8kg8UIANJ5jgsIRWJssALKkNDmlcxywgC2YjU
-rEi8KiARCjIHOI5hEa9QelllNjsxp0miyEJMXZrFhtzlTkxVBzUYo/0NfkZDYIBR
-HzFD0Iqwf+Zuw8YwQ23L0VnbNu/9h0fmL06fH8g8MRrnu247lRTbknNk8JjVlVPf
-s4obvfYElzV/bP1CR+Cvw5s/emzn62fGjGUDcZ9+1eadtKbS3gO1B6JKJLnNvmSJ
-vokTatdIL4YrQ+NFPYm9vrm093s84fExHeZDv+xO8TXffepEc0VqUX/xczHrDy1x
-V164k/3onbLi3LaB2A/nx/MmZnZEDK9J+vr3emnDctZYfEPz9GzrS4uJtWFbn9zU
-tc4amREZ6os/+c29ztWnsyrg6aGJdG7lXHjrs39Y+qoafmi8WCh4gwtWBFoOWn/b
-i68U0EWZT6OSwrPtj1vh1J7+ywE7pOWSmiSfL2Y7SsmMSHllX4atPOYZw08hUWJZ
-bvBrNTM3GntD3/u+3zw3lVC3eag17fxS4Acbaw6f3Pnm4WA+pKWtjqWn8o5UXro7
-u+9Ws9HfEucZc2cPfXy/v6rh87JKxa9e49+N3dI3OdwznB76cuftW9fyO6PFtMHS
-xhb5VF3ft9/NFXU5z72zcsAR2RSxu3v56kKGldv+RXbiKFaqj+/1rXKM9Hdvq2j3
-FnSfC2+axKlnI13W0aaYmbyGe5vaA7cs5N/e2upMb1wcC/IcTDo6n3f1+S8nchdD
-pi80ZTQejzsj3lz32VtvRP2orfbfz86Ud0VXeAM61PqRvp/pysuzRTNhOZe8I72p
-OYOFU9z4nw==
-=2Om7
+owGtUltIFFEY3tVKi4q2DAykcOyissiZmTO3pZfqIYNuUG3axe3MOWdscndmm51d
+izKotXtBYRehpKjUsKhUMh8rg1LpwR6kLMIuS3SBoCiiG53p8hI9dl4O//9/3/d/
+/3/OoXHZvlx/+7Py68m6NQ/9/S91XxgOt23hdJts5kJbuBr686JRQhNupMYkXIgD
+POChQTWARaATIkOJx4oBRZ2KGKgyL/MEs4hgDLFIZEVAEMiESAKQDU2UdI0SBSAu
+yBmmVU2duGNaLpPFWBShpAka1gUk8opIFFlXKYAAEElGBpUBgIjwjLjeTngMZk5H
+CVpm2izHgshPe//A/2ffyV9ygDc0xWsjERlpKlAEjDEBwFCowEx4wAR1LBSjDB1H
+yWjCRUjn6oIcS6dMTL3NeqP8DSkjlJHjju3a2I6yynrXjYc8ors57iFrqR75rRHR
+TYuwPTJCijoJ07a4EM+Q2DU9UR5CWQSSJoEgRzfFTYdGTA8hKbIK2PHa0BSTpBJU
+iWBUGkDRVVnSDUURJKqKmFBVk6lIIGKPIomKQgRINUHCkNVlXicAqQKSdc4ba6Nl
+e+LMKKpmogmz2kJu0qFc3Zi9/oIRPn+ub9TILO+L+caMnvDn3/U15nyfsbfzedaK
+K7HU4QAqfV/0qcXuGhpakg73hY/tODPVPRrNXmDkDKW35V/ctXo4Ktw/ODsaa9on
+Dp+sf7G7ZUp5wb30i68tFf1Pxs9s6Bvd2AB9B7rWiqerbg5mn+p+XbPzbObL94nL
+Ls9pPx5ZOm0m6pj2tvWZ0NvzsPdTDBYMzvhW1TO3eWJRR1GwLX27Ne/dvFlf/Xfz
+rz2edf9cxeKG+rOxjiNHpgfaTuyubAoFOl/XmsvDhZu6yGc+48ufXBzMrc2rOR+m
+hSszH/NKtl6+2D12w4mBD27/qqwbmfhVJ3DrUvP20tT0SfMvwFeP3JMPCotLBu68
+abTWNq17uvDbnhx+0f4f
+=tGLC
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
