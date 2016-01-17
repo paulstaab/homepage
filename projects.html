@@ -4,3 +4,29 @@ title: Projects
 permalink: /projects/
 ---
 
+<div class="container">
+  <div class="row">
+    <! -- BLOG POSTS LIST -->
+    {% for project in site.categories['projects'] %}
+    <div class="col-md-4">
+      {% if project.url %}
+      <h2><a href="{{ project.url  }}">{{ project.title }}</a></h2>
+      {% else %}
+      <h2>{{ project.title }}</h2>
+      {% endif %}
+
+      <p><i>{{ project.type }} ({{ project.role }})</i></p>
+      <p>{{ project.description }}</p>
+
+      {% if project.url %}
+      <a href="{{ project.url  }}"><button type="button" class="btn btn-default fa fa-external-link"></button></a>
+      {% endif %}
+      {% if project.github %}
+      <a href="https://github.com/{{ project.github  }}"><button type="button" class="btn btn-default fa fa-github"></button></a>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+
