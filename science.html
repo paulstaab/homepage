@@ -14,7 +14,15 @@ permalink: /science/
 
     <! -- BLOG POSTS LIST -->
     {% for paper in site.categories['publication'] %}
-    <div class="col-md-6">
+    <div class="row">
+    {% assign currentdate = paper.date | date: "%Y" %}
+    {% if currentdate != date %}
+    <div class="col-sm-1 col-md-offset-1 hidden-xs"><h3>{{ currentdate }}</h3></div>
+    <div class="col-sm-11 col-md-8">
+    {% assign date = currentdate %} 
+    {% else %}
+    <div class="col-sm-11 col-md-8 col-sm-offset-1 col-md-offset-2">
+    {% endif %}
       {% if paper.url_web %}
       <h3><a href="{{ paper.url_web  }}">{{ paper.title }}</a></h3>
       {% else %}
@@ -30,11 +38,14 @@ permalink: /science/
       <a href="{{ paper.url_pdf  }}"><button type="button" class="btn btn-default">Download</button></a>
       {% endif %}
     </div>
+    </div>
     {% endfor %}
 
-    <div class="col-md-12">
+    <div class="row">
+    <div class="col-md-10">
       <center><a href="http://scholar.google.de/citations?user=aRPHGTAAAAAJ">
           <button type="button" class="btn btn-default">View at Google Scholar</button></a></center>
+    </div>
     </div>
   </div>
 </div>
