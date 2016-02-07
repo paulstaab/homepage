@@ -13,7 +13,7 @@ permalink: /science/
     </div>
 
     <! -- BLOG POSTS LIST -->
-    {% for paper in site.categories['publication'] %}
+    {% for paper in site.publications reversed %}
     <div class="row">
     {% assign currentdate = paper.date | date: "%Y" %}
     {% if currentdate != date %}

@@ -5,9 +5,10 @@ categories: projects
 description: "A coalescent simulator for genome-scale sequences"
 type: "C++ Program"
 role: "Main Developer"
+date_start: 2012-08-02
 languages: 
 - C++
 github: scrm/scrm
-url: https://scrm.github.io
+website: https://scrm.github.io
 ---
 

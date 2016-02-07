@@ -5,12 +5,13 @@ author: Paul
 categories: projects
 role: "Main Developer"
 description: "A simulation-based parameter estimation method"
+date_start: 2012-01-01
 type: R Package
 languages:
 - R
 - C++
 img: jaatha.png
-url: https://cran.r-project.org/web/packages/jaatha/index.html
+website: https://cran.r-project.org/package=jaatha
 github: statgenlmu/jaatha
 ---
 

@@ -2,10 +2,26 @@
 
 # Site settings
 title: "PAUL STAAB"
-description: "The Personal Homepage of Paul Staab."
+description: "The Personal Homepage of Paul Staab"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "/." #important: start with /
 url: "http://paulstaab.de"
+
+navigation:
+  - title: HOME
+    url: /
+  - title: PROJECTS
+    url: /projects/
+  - title: PHOTOS
+    url: /photos/
+  - title: SCIENCE
+    url: /science/
+
+collections:
+  projects:
+    output: true
+  publications:
+    output: false
 
 # Build settings
 markdown: kramdown
