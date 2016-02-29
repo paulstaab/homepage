@@ -1,6 +1,7 @@
 ---
 layout:     post
 categories: publication
+project:    "SynBioWave"
 title:      "SynBioWave – a real-time communication platform for molecular and synthetic biology"
 author:     "Paul R Staab, Jorg Walossek, David Nellessen, Raik Grunberg, Katja M. Arndt and Kristian M. Müller"
 journal:    "Bioinformatics (2010)" 

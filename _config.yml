@@ -10,8 +10,8 @@ url: "http://paulstaab.de"
 navigation:
   - title: HOME
     url: /
-  - title: PROJECTS
-    url: /projects/
+#  - title: PROJECTS
+#    url: /projects/
   - title: PHOTOS
     url: /photos/
   - title: SCIENCE

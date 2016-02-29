@@ -5,31 +5,47 @@ layout: default
 {% include wrap.html %}
 
 <div class="container mt">
-    <div class="row">
+  <div class="row">
+    <div class="col-sm-4 col-md-offset-1">
 
-        <div class="col-lg-5 col-lg-offset-1">
-            <div class="spacing"></div>
-            {{ content }}
-        </div>
+      <p><b>Type:</b> {{ page.type }}<br />
+      <b>My Role:</b> {{ page.role }}<br />
+      <b>Language:</b> {{ page.languages | array_to_sentence_string }}<br />
+      {% if page.website %}
+      <b>Website:</b> <a href="{{ page.website  }}">{{ page.website }}</a><br />
+      {% endif %}
+      {% if page.github %}
+      <b>Code:</b> <a href="https://github.com/{{ page.github  }}" class="fa fa-github">
+        {{ page.github }}</a>
+      {% endif %}
+      </p>
+    </div>
 
-        <div class="col-lg-4 col-lg-offset-1">
-          {% if page.img %}
-            <img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}" alt="Logo">
+    <div class="col-sm-8 col-md-6">
+        {{ content }}
+
+        {% assign publications = site.publications | where:'project',page.title %}
+        {% if publications.size != 0 %}
+        {% if publications.size == 1 %}
+        <h4>Related Publication:</h4>
+        {% else %}
+        <h4>Related Publications:</h4>
+        {% endif %}
+        <p><ul>
+          {% for paper in publications %} 
+          <li>
+          {% if paper.url_web %}
+          <b><a href="{{ paper.url_web  }}">{{ paper.title }}</a></b>
+          {% else %}
+          <b>{{ paper.title }}</b>
           {% endif %}
-            <h4>Project Details</h4>
-            <div class="hline"></div>
-            <p><b>Type:</b> {{ page.type }}</p>
-            <p><b>My Role:</b> {{ page.role }}</p>
-            <p><b>Date:</b> {{ page.date_start }}</p>
-            <p><b>Language:</b> {{ page.languages | array_to_sentence_string }}</p>
-            {% if page.website %}
-            <p><b>Website:</b> <a href="{{ page.website  }}">{{ page.website }}</a>
-            {% endif %}
-            {% if page.github %}
-            <p><b>Code:</b> <a href="https://github.com/{{ page.github  }}" class="fa fa-github">
-              {{ page.github }}</a>
-            {% endif %}
-            </p>
-        </div>
+          <br \>
+          {{ paper.author }}.
+          {{ paper.journal }}.
+          {% endfor %}
+        </ul><p>
+        {% endif %}
+
+    </div>
     </div><! --/row -->
 </div><! --/container -->
