@@ -7,15 +7,16 @@ permalink: /
 <!-- {% include portfolio.html title="Projects" limit=10 %} -->
 
 <div id="intro-bg"> 
-<noscript><img src="{{"/assets/img/cover.jpg" | prepend: site.baseurl }}"/></noscript>
+  <!-- <noscript> --><img src="{{"/assets/img/cover.jpg" | prepend: site.baseurl
+  }}"/><!--</noscript>-->
 </div>
 
   {% raw %}
+  <!--
   <script type="text/javascript">
   var userFeed = new Instafeed(
       { get: 'user',
         userId: 2025139985,
-        accessToken: '2025139985.467ede5.fbb8d7c35f734b8d9b806b62dfcfbca3',
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
         limit: 1,
@@ -24,6 +25,7 @@ permalink: /
       });
   userFeed.run();
   </script>
+  -->
   {% endraw %}
 
 <div class="container mtb intro-container">
