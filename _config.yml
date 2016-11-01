@@ -2,8 +2,8 @@
 
 # Site settings
 title: "PAUL STAAB"
-description: "The Personal Homepage of Paul Staab"
-analytics: #Google analytics code in the format XX-nnnnnnnn-n
+description: "Personal Homepage of Paul Staab"
+analytics: UA-86675232-1
 baseurl: "/." #important: start with /
 url: "http://paulstaab.de"
 
