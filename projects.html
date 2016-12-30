@@ -5,29 +5,63 @@ permalink: /projects/
 ---
 
 <div class="container">
+  <div class="jumbotron">
+    <h2>R Packages</h2>
+  </div>
+  {% assign projects = site.projects | where: "type","R Package" | sort: "date_start" %}
+
   <div class="row">
-    <! -- BLOG POSTS LIST -->
-    {% assign projects = site.projects | sort: "date_start" %}
-    {% for project in projects %}
+  {% for project in projects %}
     <div class="col-md-4">
-      {% if project.url %}
+      <!--{% if project.url %}
+      <h2><a href="{{ project.url | prepend: site.baseurl }}">{{project.title }}</a></h2>
       <h2><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h2>
       {% else %}
       <h2>{{ project.title }}</h2>
-      {% endif %}
-
-      <p><i>{{ project.type }}</i></p>
-      <p>{{ project.description }}</p>
-
+      {% endif %} -->
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.content }}</p>
+      <p>
       {% if project.website %}
       <a href="{{ project.website  }}"><button type="button" class="btn btn-default fa fa-external-link"></button></a>
       {% endif %}
       {% if project.github %}
       <a href="https://github.com/{{ project.github  }}"><button type="button" class="btn btn-default fa fa-github"></button></a>
       {% endif %}
+      </p>
     </div>
-    {% endfor %}
+  {% endfor %}
+  </div>
+</div>
 
+
+<div class="container mtb">
+  <div class="jumbotron mt-2">
+    <h2>Other Software</h2>
+  </div>
+  {% assign projects = site.projects | where: "type","Software" | sort: "date_start" %}
+
+  <div class="row">
+  {% for project in projects %}
+    <div class="col-md-4">
+      <!--{% if project.url %}
+      <h2><a href="{{ project.url | prepend: site.baseurl }}">{{project.title }}</a></h2>
+      <h2><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h2>
+      {% else %}
+      <h2>{{ project.title }}</h2>
+      {% endif %} -->
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.content }}</p>
+      <p>
+      {% if project.website %}
+      <a href="{{ project.website  }}"><button type="button" class="btn btn-default fa fa-external-link"></button></a>
+      {% endif %}
+      {% if project.github %}
+      <a href="https://github.com/{{ project.github  }}"><button type="button" class="btn btn-default fa fa-github"></button></a>
+      {% endif %}
+      </p>
+    </div>
+  {% endfor %}
   </div>
 </div>
 

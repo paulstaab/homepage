@@ -10,8 +10,8 @@ url: "http://paulstaab.de"
 navigation:
   - title: HOME
     url: /
-#  - title: PROJECTS
-#    url: /projects/
+  - title: PROJECTS
+    url: /projects/
 #  - title: PHOTOS
 #    url: /photos/
   - title: SCIENCE
@@ -50,8 +50,8 @@ social:
     url: https://de.linkedin.com/in/paulstaab
   - title: facebook
     url: https://www.facebook.com/paul.r.staab
-  - title: instagram
-    url: https://instagram.com/paul.staab
+    #  - title: instagram
+    #url: https://instagram.com/paul.staab
     
 about: "I'm a Data Scientist in Munich, Germany."
 

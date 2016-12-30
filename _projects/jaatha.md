@@ -13,10 +13,10 @@ website: https://cran.r-project.org/package=jaatha
 github: statgenlmu/jaatha
 ---
 
-Jaatha is an estimation method that can use computer simulations to approximate
-maximum-likelihood estimates even when the likelihood function can not be
-evaluated directly. It can be applied whenever it is feasible to conduct many
-simulations, but works best when the data is approximately Poisson distributed.
-It was originally designed for demographic inference in evolutionary biology. It
-has optional support for conducting coalescent simulation using the 'coala'
-package.
+`Jaatha` is a parameter estimation method for estimating parameters of 
+evolutionary models from genetic data. It applies machine learning
+to simulated data to generate a model with is then in turn used
+to estimate composite-likelihood parameters for the biological
+data. It is implemented as an `R` package and uses `coala` for
+conduction the simulations.
+
