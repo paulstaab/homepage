@@ -50,8 +50,8 @@ social:
     url: https://de.linkedin.com/in/paulstaab
   - title: facebook
     url: https://www.facebook.com/paul.r.staab
-    #  - title: instagram
-    #url: https://instagram.com/paul.staab
+  - title: instagram
+    url: https://instagram.com/paul.staab
     
-about: "I'm a Data Scientist in Munich, Germany."
+about: "I'm a Data Scientist and R Package Developer in Munich, Germany."
 
