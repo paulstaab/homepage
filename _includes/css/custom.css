@@ -20,6 +20,10 @@
   opacity: 0.4;
 }
 
+.intro-message {
+  padding-top: 7.5%;
+}
+
 .intro-message > p {
   color: #FFFFFF;
   font-size: 1.5em;
