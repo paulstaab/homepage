@@ -6,7 +6,7 @@ description: "Personal Homepage of Paul Staab"
 analytics: UA-86675232-1
 baseurl: "/." #important: start with /
 url: "http://paulstaab.de"
-wallpaper: winter2.JPG
+wallpaper: winter1.jpg
 
 navigation:
   - title: HOME
