@@ -5,7 +5,7 @@ title: "PAUL STAAB"
 description: "Personal Homepage of Paul Staab"
 analytics: UA-86675232-1
 baseurl: "/." #important: start with /
-url: "http://paulstaab.de"
+url: "https://paulstaab.de"
 wallpaper: summer2.jpg
 
 navigation:
@@ -52,5 +52,5 @@ social:
   - title: facebook
     url: https://www.facebook.com/paul.r.staab
     
-about: "I'm a Data Scientist and R Package Developer in Munich, Germany."
+about: "I'm a Data Scientist in Munich, Germany."
 
