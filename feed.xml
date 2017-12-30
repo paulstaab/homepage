@@ -3,9 +3,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
-		<title>{{ site.name | xml_escape }}</title>
-		<description>ML in Production</description>		
-		<link>{{ site.url }}</link>
+		<title>{{ site.blog.title | xml_escape }}</title>
+		<description>{{ site.blog.description | xml_escape }}</description>		
+		<link>{{ site.blog.url }}</link>
 		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
         {% for post in site.categories['blog'] limit:20 %}
 			<item>
