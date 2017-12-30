@@ -6,28 +6,16 @@
             <input type="text" class="form-control" placeholder="Search something">
         </p>
     <div class="spacing"></div> -->
+   
     <h4>About</h4>
     <div class="hline"></div>
-   <p><i>ML in Production</i> is my personal blog, where I write about Data Science and Machine Learning
-         with a particular focus on the steps that are neccesary to use both realiably in applications
-         and products.
-    </p>   
+    <p>{{ site.blog.description }}</p>   
     <div class="spacing"></div>
     <h4>Subscribe</h4>
     <div class="hline"></div>
         <p>
             <p class="rss-subscribe">Subscribe to this blog <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
         </p>
-    <div class="spacing"></div>
-    <h4>Categories</h4>
-    <div class="hline"></div>
-    {% for category in site.categories %}{% unless category.first == "blog" or category.first == "project" or category.first == "publication" %}
-        <p>
-            <a href="{{ '/category/#'  | prepend: site.baseurl  }}{{ category | first }}"><i class="fa fa-angle-right"></i> {{ category | first | capitalize }}</a>
-            <span class="badge badge-theme pull-right">{{ category | last | size }}</span>
-        </p>
-    {% endunless %}{% endfor %}
-
     <div class="spacing"></div>
 
     <h4>Recent Posts</h4>
@@ -43,7 +31,16 @@
             </li>
             {% endfor %} 
         </ul>
+    <div class="spacing"></div>
 
+    <h4>Categories</h4>
+    <div class="hline"></div>
+    {% for category in site.categories %}{% unless category.first == "blog" or category.first == "project" or category.first == "publication" %}
+        <p>
+            <a href="{{ '/category/#'  | prepend: site.baseurl  }}{{ category | first }}"><i class="fa fa-angle-right"></i> {{ category | first | capitalize }}</a>
+            <span class="badge badge-theme pull-right">{{ category | last | size }}</span>
+        </p>
+    {% endunless %}{% endfor %}
     <div class="spacing"></div>
 
     <h4>Popular Tags</h4>
