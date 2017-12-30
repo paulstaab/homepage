@@ -11,15 +11,15 @@ wallpaper: winter2.JPG
 blog:
   title: "ML in Production"
   description: "ML in Production is my personal blog, where I write about Data Science and Machine Learning with a particular focus on the steps that are neccesary to use both realiably in applications and products. "
-  url: "/blog"
+  url: "https://paulstaab.de/blog/"
 
 navigation:
   - title: HOME
     url: /
+#  - title: BLOG
+#    url: /blog/    
   - title: PROJECTS
     url: /projects/
-#  - title: PHOTOS
-#    url: /photos/
   - title: SCIENCE
     url: /science/
 
