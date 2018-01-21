@@ -56,7 +56,5 @@ subscripte to the [RSS feed](https://paulstaab.de/feed.xml) or follow me on
 [Twitter](https://twitter.com/paulstaab) or
 [LinkedIn](https://de.linkedin.com/in/paulstaab), where I will share new posts as well.
 
-That's it for now. I hope you stay tuned for the next post.
-
-Best wishes,
+Best wishes & stay tuned for the next post!
 Paul
