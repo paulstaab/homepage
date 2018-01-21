@@ -16,8 +16,8 @@ blog:
 navigation:
   - title: HOME
     url: /
-#  - title: BLOG
-#    url: /blog/    
+  - title: BLOG
+    url: /blog/    
   - title: PROJECTS
     url: /projects/
   - title: SCIENCE
