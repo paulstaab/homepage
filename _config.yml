@@ -3,7 +3,7 @@
 # Site settings
 title: "PAUL STAAB"
 description: "Personal Homepage of Paul Staab"
-analytics: UA-86675232-1
+analytics:
 baseurl: "/." #important: start with /
 url: "https://paulstaab.de"
 wallpaper: winter2.JPG
