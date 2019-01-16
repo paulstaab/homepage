@@ -6,7 +6,7 @@ description: "Personal Homepage of Paul Staab"
 analytics:
 baseurl: "/." #important: start with /
 url: "https://paulstaab.de"
-wallpaper: winter2.JPG
+wallpaper: winter1.jpg
 
 blog:
   title: "ML in Production"
@@ -50,12 +50,8 @@ colors:  #in hex code if not noted else
 social:
   - title: github
     url: https://github.com/paulstaab
-  - title: twitter
-    url: https://twitter.com/paulstaab 
   - title: linkedin
     url: https://de.linkedin.com/in/paulstaab
-  - title: xing
-    url: https://www.xing.com/profile/Paul_Staab2
     
 about: "I'm a Data Scientist in Munich, Germany."
 
