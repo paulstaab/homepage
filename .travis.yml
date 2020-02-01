@@ -27,6 +27,7 @@ deploy:
   access_key_id: $AWS_ACCESS_ID
   secret_access_key: $AWS_ACCESS_SECRET
   bucket: $AWS_S3_BUCKET
+  region: $AWS_REGION
   local_dir: _site
   skip_cleanup: true
   acl: public_read
