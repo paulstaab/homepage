@@ -19,9 +19,9 @@ navigation:
   #- title: BLOG
   #  url: /blog/    
   - title: PROJECTS
-    url: /projects/
+    url: /projects.html
   - title: SCIENCE
-    url: /science/
+    url: /science.html
 
 collections:
   projects:
