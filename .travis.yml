@@ -30,7 +30,6 @@ deploy:
   region: $AWS_REGION
   local_dir: _site
   skip_cleanup: true
-  acl: public_read
   on:
     branch: master
 
