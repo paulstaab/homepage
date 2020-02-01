@@ -19,7 +19,17 @@ sudo: false # route your build to the container-based infrastructure for a faste
 
 cache: bundler # caching bundler gem packages will speed up build
 
-# Optional: disable email notifications about the outcome of your builds
 notifications:
   email: false
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_ID
+  secret_access_key: $AWS_ACCESS_SECRET
+  bucket: $AWS_S3_BUCKET
+  local_dir: _site
+  skip_cleanup: true
+  acl: public_read
+  on:
+    branch: master
 
