@@ -54,4 +54,6 @@ social:
     url: https://de.linkedin.com/in/paulstaab
     
 about: "I'm a Data Scientist in Munich, Germany."
+plugins:
+  - jekyll-sitemap
 
