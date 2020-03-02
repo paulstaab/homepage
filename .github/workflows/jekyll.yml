@@ -3,17 +3,16 @@ name: CI/CD
 on: [push]
 
 jobs:
-- build:
+  build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
     - name: Build the site in the jekyll/builder container
-      uses: actions/checkout@v1
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
-
-- test:
+  test:
     runs-on: ubuntu-latest
     steps:
     - name: HTML5 Validator
@@ -29,4 +28,8 @@ jobs:
         # log_level: # optional, default is WARNING
         # Checks css as well
         # css: # optional
+    - name: Link Checker
+      uses: peter-evans/link-checker@v1
+      with:
+        args: -v -r ${{ github.workspace }}/_site
 
