@@ -18,10 +18,10 @@ navigation:
     url: /
   #- title: BLOG
   #  url: /blog/    
-  - title: PROJECTS
-    url: /projects.html
-  - title: SCIENCE
-    url: /science.html
+  #- title: PROJECTS
+  #  url: /projects.html
+  #- title: SCIENCE
+  #  url: /science.html
 
 collections:
   projects:
