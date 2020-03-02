@@ -27,11 +27,10 @@ jobs:
         name: homepage
         path: .
     
-    - name: HTML5 Validator
-      uses: Cyb3r-Jak3/html5validator-action@v0.4
+    - name: Check HTML
+      uses: chabad360/htmlproofer@master
       with:
-        root: .
-        CSS: true
+        directory: "."
 
     - name: Link Checker
       uses: peter-evans/link-checker@v1
