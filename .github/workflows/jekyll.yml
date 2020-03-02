@@ -12,25 +12,28 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+        
+    - uses: actions/upload-artifact@v1
+      with:
+        name: homepage
+        path: _site
+
   test:
     runs-on: ubuntu-latest
     needs: [build]
     steps:
+    - uses: actions/download-artifact@v1
+      with:
+        name: homepage
+        path: .
+    
     - name: HTML5 Validator
       uses: Cyb3r-Jak3/html5validator-action@v0.4
       with:
-        # Path of the files to test
-        root: ${{ github.workspace }}/_site
-        # Extra arguments to test with
-        # extra: # optional
-        # Format for logging output. Valid values: gnu,xml,json,text
-        # format: # optional
-        # Logging Level. Valid values: DEBUG, INFO, WARNING. Default: WARNING
-        # log_level: # optional, default is WARNING
-        # Checks css as well
-        # css: # optional
+        root: .
+
     - name: Link Checker
       uses: peter-evans/link-checker@v1
       with:
-        args: -v -r ${{ github.workspace }}/_site
-
+        args: -v -r .
+  
