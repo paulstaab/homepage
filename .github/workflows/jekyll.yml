@@ -30,12 +30,8 @@ jobs:
     - name: Check HTML
       uses: chabad360/htmlproofer@master
       with:
-        directory: "."
-
-    - name: Link Checker
-      uses: peter-evans/link-checker@v1
-      with:
-        args: -v -r .
+        directory: .
+        arguments: --http-status-ignore "999"
 
   deploy:
     runs-on: ubuntu-latest
