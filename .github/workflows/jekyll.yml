@@ -13,6 +13,7 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
   test:
+    runs-on: ubuntu-latest
     needs: [build]
     steps:
     - name: HTML5 Validator
