@@ -1,3 +1,5 @@
+![CI/CD](https://github.com/paulstaab/homepage/workflows/CI/CD/badge.svg)
+
 My Homepage & Blog
 ==================
 
