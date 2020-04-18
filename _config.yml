@@ -6,7 +6,7 @@ description: "Personal Homepage of Paul Staab"
 analytics:
 baseurl: "/." #important: start with /
 url: "https://paulstaab.de"
-wallpaper: winter3.jpg
+wallpaper: spring1.jpg
 
 blog:
   title: "ML in Production"
