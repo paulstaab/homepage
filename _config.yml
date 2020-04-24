@@ -10,16 +10,16 @@ wallpaper: spring1.jpg
 
 blog:
   title: "ML in Production"
-  description: "ML in Production is my personal blog, where I write about Data Science and Machine Learning with a particular focus on the steps that are neccesary to use both reliably in applications and products."
-  url: "https://paulstaab.de/blog/"
+  description: ""
+  url: "https://paulstaab.de/blog/index.html"
 
 navigation:
   - title: HOME
     url: /
-  #- title: BLOG
-  #  url: /blog/    
   # - title: INVESTMENTS
   #  url: /investments.html
+  - title: BLOG
+    url: /blog/index.html
   #- title: PROJECTS
   #  url: /projects.html
   #- title: SCIENCE
@@ -33,7 +33,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-permalink: /blog/:year/:title
+permalink: /blog/:year/:title.html
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 sass:
   style: compressed
