@@ -2,7 +2,7 @@
 layout: stylesheet
 ---
 
-{% include css/bootstrap.css %}
+{% include css/bootstrap_4.4.1.min.css %}
 
 {% include css/font-awesome.min.css %}
 
