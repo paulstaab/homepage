@@ -26,7 +26,7 @@
 
 .intro-message > p {
   color: #FFFFFF;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: left;
   line-height: inherit;
 }
@@ -38,16 +38,6 @@
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #384452;
-}
-
-#instafeed img {
-  width: 100%;
-  height: auto;
-}
-
-#instafeed .likes {
-  float: right;
-  padding-bottom: 20px;
 }
 
 .navbar-transparent {
