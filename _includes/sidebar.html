@@ -26,7 +26,7 @@
     {% for category in site.categories %}{% unless category.first == "blog" or category.first == "project" or category.first == "publication" %}
         <p>
             <a href="{{ '/blog/categories.html#' | prepend: site.baseurl  }}{{ category | first }}"><i class="fa fa-angle-right"></i> {{ category | first | capitalize }}</a>
-            <span class="badge badge-theme pull-right">{{ category | last | size }}</span>
+            <span class="badge badge-theme">{{ category | last | size }}</span>
         </p>
     {% endunless %}{% endfor %}
     <div class="spacing"></div>
