@@ -2,5 +2,20 @@
 layout: default
 ---
 
-{{ content }}
+<div class="container mtb">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+
+      {{ content }}
+
+
+    </div>
+    <div class="col-lg-2 d-none d-xl-block">
+      
+      {% include sidebar.html %}
+
+    </div>
+
+  </div>
+</div>
 

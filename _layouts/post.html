@@ -1,29 +1,19 @@
 ---
-layout: default
+layout: blog
 ---
 
-<div class="container mtb">
-    <div class="row">
-        <!-- SINGLE POST -->
-        <div class="col-lg-8">
-            <!-- Blog Post  -->
-            {% if page.img.file %}
-            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img.file }}">
-               <csmall class="img-copyright">Picture by <a href="{{ page.img.link }}">{{ page.img.credit }}</a>,  
-                       <a href="{{ page.img.license-link }}">{{ page.img.license }}</a>, 
-                       {{ page.img.comment }}</csmall></p>
-            {% endif %}
-            <h1>{{ page.title }}</h1>
-            <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
-              
-            {{ content }}
+    <!-- Blog Post  -->
+    {% if page.img.file %}
+    <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img.file }}">
+       <csmall class="img-copyright">Picture by <a href="{{ page.img.link }}">{{ page.img.credit }}</a>,  
+	       <a href="{{ page.img.license-link }}">{{ page.img.license }}</a>, 
+	       {{ page.img.comment }}</csmall></p>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
+      
+    {{ content }}
 
-            <div class="spacing"></div>
-            {% include sharing_buttons.html %}
+    <div class="spacing"></div>
+    {% include sharing_buttons.html %}
 
-        </div><! --/col-lg-8 -->
-        
-        {% include sidebar.html %}
-
-    </div>
-</div>
