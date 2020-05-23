@@ -16,13 +16,13 @@ the creation of Extract-Transform-Load (ETL) jobs with Spark:
 **Dynamic partition overwrite mode**.
 <!--more-->
 
-# Creating idempotent ETL logic
+## Creating idempotent ETL logic
 
-Dynamic partition overwrite mode was [added in Spark 2.3](1) and solves a 
+Dynamic partition overwrite mode was [added in Spark 2.3][1] and solves a 
 problem that often occured when saving new data into an existing table. 
 To understand the problem, let's first look at Spark's four modes for writing data: 
 
-- **errorifexists**: Throws an error if we are trying to write into an existing table.
+- **error**: Throws an error if we are trying to write into an existing table.
 - **ignore**: Does not write any data if the table exists.
 - **overwrite**: Overwrites the complete table with the new data.
 - **append**: Appends the data to the table.
@@ -41,19 +41,19 @@ When rerunning the failed job, the *append* option tends to cause data duplicati
 issues, because the data was already partially loaded in the failed first run and 
 is now added again. 
 
-For being able to deal with such errors, it is desiarable that re-executions of 
+To deal with such errors, it is desiarable that re-executions of 
 a job with an old delivery does not change the target table if this delivery was already loaded, 
 but fixes any existing problems with the data for this delivery. 
-This is property is often refered to idempotency, and while all of Spark's write modes but 
+This is property is often refered to as *idempotency*, and while all of Spark's write modes but 
 *append* are idempotent, only *append* is suitable for incremental loads.
 
 
 
 
-# References
-[1](https://issues.apache.org/jira/browse/SPARK-20236)
+## References
+[1]: https://issues.apache.org/jira/browse/SPARK-20236
 
-https://medium.com/nmc-techblog/spark-dynamic-partition-inserts-part-1-5b66a145974f
-https://medium.com/nmc-techblog/spark-dynamic-partition-inserts-and-aws-s3-part-2-9ba0c97ad2c0
-https://gist.github.com/roitvt/0d5b1a9d09f73036689dd022d197d6ca#file-hadoopmapreducecommitprotocol-scala
+- [Blogpost: Spark Dynamic Partition Inserts — Part 1](https://medium.com/nmc-techblog/spark-dynamic-partition-inserts-part-1-5b66a145974f)
+- [Blogpost: Spark Dynamic Partition Inserts and AWS S3 — Part 2](https://medium.com/nmc-techblog/spark-dynamic-partition-inserts-and-aws-s3-part-2-9ba0c97ad2c0)
+- https://gist.github.com/roitvt/0d5b1a9d09f73036689dd022d197d6ca#file-hadoopmapreducecommitprotocol-scala
 
