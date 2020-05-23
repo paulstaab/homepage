@@ -13,7 +13,7 @@ layout: default
                        <a href="{{ page.img.license-link }}">{{ page.img.license }}</a>, 
                        {{ page.img.comment }}</csmall></p>
             {% endif %}
-            <a href="{{ page.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ page.title }}</h3></a>
+            <h1>{{ page.title }}</h1>
             <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
               
             {{ content }}
