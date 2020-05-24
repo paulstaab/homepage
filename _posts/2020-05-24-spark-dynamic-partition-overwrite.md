@@ -137,7 +137,7 @@ the new partitions to the correct place. This is described in
 
 This implementation assumes that moving files is a fast and atomic operation. This is 
 generally true for file systems like HDFS, but is not necessary for object storage.
-Consequently, there are reports [that dynamic partition overwrite is slow on S3][2].
+Consequently, there are reports [that dynamic partition overwrite can be slow on S3][2].
 
 
 ## References

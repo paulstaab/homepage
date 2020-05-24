@@ -4,30 +4,23 @@ title: Tags
 permalink: /blog/tags.html
 ---
 
+<h1>{{ page.title }}</h1>
 
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-8">
+<!-- BLOG POSTS LIST -->
+{% for tag in site.tags %}
 
-        <!-- BLOG POSTS LIST -->
-        {% for tag in site.tags %}
+	<a class="anchor" id="{{ tag.first }}"></a><h2>{{ tag.first }}</h2>
+	    <div class="hline"></div>
+	    <ul class="popular-posts">
+		{% for post in site.tags[tag.first] %}
 
-                <a class="anchor" id="{{ tag.first }}"></a><h4>{{ tag.first }}</h4>
-                    <div class="hline"></div>
-                    <ul class="popular-posts">
-                        {% for post in site.tags[tag.first] %}
+		    <li>
+			<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+			<em>Posted on {{ post.date | date_to_string }}</em>
+		    </li>
+       
+		{% endfor %}
+	  </ul>
 
-                            <li>
-                                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-                                <em>Posted on {{ post.date | date_to_string }}</em>
-                            </li>
-               
-                        {% endfor %}
-                  </ul>
-
-        {% endfor %}
-        </div>
-
-    </div>
-</div>
+{% endfor %}
 
