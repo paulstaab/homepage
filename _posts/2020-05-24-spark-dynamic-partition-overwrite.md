@@ -121,8 +121,8 @@ spark.read.parquet('./pruchases') \
 
 To implement the logic described above, Sparks first writes the new partitions into 
 a temporary folder, then deletes the partitions from the old table and finally moves 
-the new partitions to the correct place. This is described in 
-[Spark's Score Code][3]:
+the new partitions to the correct place. This is described in a comment in  
+[Spark's source code][3]:
 
 ```
  * @param dynamicPartitionOverwrite If true, Spark will overwrite partition directories at runtime
