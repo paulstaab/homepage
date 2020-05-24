@@ -147,5 +147,5 @@ Consequently, there are reports [that dynamic partition overwrite can be slow on
 - [Blogpost: Spark Dynamic Partition Inserts and AWS S3 — Part 2][2]
 
 [1]: https://issues.apache.org/jira/browse/SPARK-20236
-[2]: (https://medium.com/nmc-techblog/spark-dynamic-partition-inserts-and-aws-s3-part-2-9ba0c97ad2c0)
-[3]: (https://github.com/apache/spark/blob/master/core/src/main/scala/org/apache/spark/internal/io/HadoopMapReduceCommitProtocol.scala)
+[2]: https://medium.com/nmc-techblog/spark-dynamic-partition-inserts-and-aws-s3-part-2-9ba0c97ad2c0
+[3]: https://github.com/apache/spark/blob/master/core/src/main/scala/org/apache/spark/internal/io/HadoopMapReduceCommitProtocol.scala
