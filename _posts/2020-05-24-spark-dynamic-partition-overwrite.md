@@ -79,16 +79,17 @@ Assume our table is partitioned by `DATE` and currently contains three purchases
 |-----|--------|----------|
 |ITEM1|       5|2020-05-23|
 |ITEM2|       1|2020-05-23|
-|ITEM2|       3|2020-05-24|
+|ITEM3|       3|2020-05-24|
 
 We get a new get a new delivery for `2020-05-24` with and additional item which
 was missing before:
 
 | ITEM|QUANTITY|      DATE|
 |-----|--------|----------|
-|ITEM2|       3|2020-05-24|
-|ITEM1|       2|2020-05-24|
+|ITEM3|       3|2020-05-24|
+|ITEM4|       2|2020-05-24|
 
+When using *append*, ITEM3 would get duplicated.
 We can now use dynamic partition overwrite to the data for the 24th, but keep the 
 purchases from the previous day: 
 
@@ -113,8 +114,8 @@ spark.read.parquet('./pruchases') \
 |-----|--------|----------|
 |ITEM1|       5|2020-05-23|
 |ITEM2|       1|2020-05-23|
-|ITEM2|       3|2020-05-24|
-|ITEM1|       2|2020-05-24|
+|ITEM3|       3|2020-05-24|
+|ITEM4|       2|2020-05-24|
 
 
 ## Implementation Details
