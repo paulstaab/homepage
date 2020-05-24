@@ -62,9 +62,9 @@ day.
 This requirements gives us the possibility to obtain idempotent updates to 
 our table by implementing the following logic:
 
-(1) keep all days which are already in the table, but not in the new delivery 
-(2) delete any days contained in the new delivery from the table
-(3) append all data from the new delivery to the table
+1. Keep all days which are already in the table, but not in the new delivery 
+2. Delete any days contained in the new delivery from the table
+3. Append all data from the new delivery to the table
 
 We had to implement this logic by hand in previous versions of Spark, and I did
 so in at least one project. Doing this in an efficient manner was difficult and 
