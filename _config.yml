@@ -16,8 +16,8 @@ blog:
 navigation:
   - title: HOME
     url: /
-  #- title: BLOG
-  #  url: /blog/index.html
+  - title: BLOG
+    url: /blog/index.html
   # - title: INVESTMENTS
   #  url: /investments.html
   #- title: PROJECTS

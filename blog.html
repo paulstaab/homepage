@@ -4,35 +4,23 @@ title: Blog
 permalink: /blog/index.html
 ---
 
-<div class="container mtb">
-    <div class="row">
 
-        <!-- BLOG POSTS LIST -->
-        <div class="col-lg-8">
+    {% for post in site.posts reversed %}
+	<!-- Blog Post -->
+	{% if post.img.file %}
+	<a href="{{ post.url | prepend: site.baseurl }}">
+	    <img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ post.img.file }}">
+	</a>
+	<csmall class="img">Picture by <a href="{{ post.img.link }}">{{ post.img.credit }}</a>,  
+		    <a href="{{ post.img.license-link }}">{{ post.img.license }}</a>, 
+		    {{ post.img.comment }}</csmall>
+	{% endif %}
+	<a href="{{ post.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ post.title }}</h3></a>
+	<p><csmall>{{ post.date | date: "%b %-d, %Y" }}. | By: {{ post.author }}</csmall></p>
+	{{ post.excerpt }}
+	<p><a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a></p>
+	<div class="hline"></div>
 
-            {% for post in site.posts reversed %}
-                <!-- Blog Post -->
-                {% if post.img.file %}
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ post.img.file }}">
-                </a>
-                <csmall class="img">Picture by <a href="{{ post.img.link }}">{{ post.img.credit }}</a>,  
-                            <a href="{{ post.img.license-link }}">{{ post.img.license }}</a>, 
-                            {{ post.img.comment }}</csmall>
-                {% endif %}
-                <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ post.title }}</h3></a>
-                <p><csmall>{{ post.date | date: "%b %-d, %Y" }}. | By: {{ post.author }}</csmall></p>
-                {{ post.excerpt }}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a></p>
-                <div class="hline"></div>
-
-                <div class="spacing"></div>
-            {% endfor %}
-
-        </div>
-
-        {% include sidebar.html %}
-
-    </div>
-</div>
+	<div class="spacing"></div>
+    {% endfor %}
 

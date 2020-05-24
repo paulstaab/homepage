@@ -85,7 +85,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
 }
 
 p { 
@@ -128,6 +127,10 @@ a:focus {
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
+.navbar {
+  background: {{ site.colors.secondary }}
+}
+
 .navbar-brand {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
@@ -145,10 +148,11 @@ a:focus {
 
 .btn-theme {
   color: #fff;
-  background-color: {{ site.colors.secondary }};
-  border-color: {{ site.colors.secondary }};
+  background-color: {{ site.colors.primary }};
+  border-color: {{ site.colors.primary }};
   margin: 4px;
 }
+
 .btn-theme:hover,
 .btn-theme:focus,
 .btn-theme:active,
@@ -312,6 +316,7 @@ csmall {
 }
 
 .badge-theme {
+	color: {{ site.colors.secondary }};
 	background: {{ site.colors.primary }};
 }
 
