@@ -4,26 +4,30 @@ title: Investments
 ---
 
 # My Investments
-This page gives a short overview of my investment strategy. It is a pure report
-and **does not constitue investment advice in any form**.
+This page gives a short overview of my investments. I invest primarily to build 
+additional income for my retirement. All my investments are long-term, with
+exceptions of experiments I conduct to evaluate different asset classes. 
+
+This page is a report of what I am doing and 
+**does not constituted investment advice in any form**.
 
 
-## General Stategy
-I follow a passive investment stategy and try to avoid stock picking and market
-timing. I primarily invest in broad ETFs and aim for a classical and boring 
-combination of 
+## General Strategy
+I follow a passive investment strategy and try to avoid stock picking and market
+timing. I primarily invest in broadly diversified ETFs on the stock indices
 
-+ 70% MSCI World
-+ 30% MSCI Emerging Markets
++ MSCI World (70%)
++ MSCI Emerging Markets (30%)
 
-for more than 90% of my investments.
+for more than 90% of my investments. I am currently evaluating options for
+more sustainable and environmentally friendly indices here.
 
 I also like to experiment with other asset classes and have smaller positions
-of (less than 5% each) in
+of less than 5% of my overall portfolio in
 
 + P2P- and Crowd-Investments 
-+ REITs 
-+ Comodities
++ REITs
++ Commodities
 + Express certificates
 
 
@@ -40,3 +44,9 @@ In the last years, I obtained the following
 | 2019 | 12,58%               |
 
 
+## Book Recommendations
+
+For German readers, I recommend the following books to get started with investing in stocks:
+
+* [Gerd Kommer: *Souverän investieren mit Indexfonds und ETFs*](https://www.amazon.de/Souverän-investieren-Indexfonds-ETFs-Book/dp/3593508524/)
+* [Albert Warnecke: *Der Finanzwesir 2.0 - Was Sie über Vermögensaufbau wirklich wissen müssen*](https://www.amazon.de/Finanzwesir-Vermögensaufbau-Intelligent-finanzielle-Altersvorsorge/dp/3734579813)
