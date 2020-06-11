@@ -18,8 +18,8 @@ navigation:
     url: /
   - title: BLOG
     url: /blog/index.html
-  # - title: INVESTMENTS
-  #  url: /investments.html
+  - title: INVESTMENTS
+    url: /investments.html
   #- title: PROJECTS
   #  url: /projects.html
   #- title: SCIENCE
