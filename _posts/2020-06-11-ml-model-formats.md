@@ -12,8 +12,12 @@ Management Summary:
 
 - I compare three different formats for storing scikit-learn models: Pickle, ONNX and PMML
 - Pickle is fast and easy to use, but has security concerns and models may be incompatible with updated scikit-learn versions
-- ONNX shines for neural networks, but works well for other ML models as well
-- Try to avoid using PMML model for inference when using Python
+- ONNX shines for neural networks and works well for other ML models but is more difficult to use
+- Try to avoid using PMML when doing the inference with Python
+
+<!--more-->
+
+## Storing ML Models
 
 The life-cycle of a Machine Learning model roughly consists of four stages:
 
@@ -33,9 +37,12 @@ and in case of scikit-learn, many practitioners often just use the
 However, this approach has some potentially problematic limitations for the inference stage later, which are also
 [mentioned in scikit-learns documenation](https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations):
 
-    * Never unpickle untrusted data as it could lead to malicious code being executed upon loading.
-    * While models saved using one version of scikit-learn might load in other versions, this is entirely unsupported and inadvisable. 
-      It should also be kept in mind that operations performed on such data could give different and unexpected results.
+    * Never unpickle untrusted data as it could lead to malicious code
+      being executed upon loading.
+    * While models saved using one version of scikit-learn might load 
+      in other versions, this is entirely unsupported and inadvisable. 
+      It should also be kept in mind that operations performed on such 
+      data could give different and unexpected results.
 
 In my current project, we recently hit the second limitation. We could not load all of our models with newer versions of
 scikit-learn, and where consequently force to stick with the old version or to completely retrain all the models (which
