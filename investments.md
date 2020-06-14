@@ -9,7 +9,7 @@ additional income for my retirement. All my investments are long-term, with
 exceptions of experiments I conduct to evaluate different asset classes. 
 
 This page is a report of what I am doing and 
-**does not constituted investment advice in any form**.
+**does not constitute investment advice in any form**.
 
 
 ## General Strategy
