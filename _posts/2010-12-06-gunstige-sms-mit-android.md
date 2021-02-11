@@ -17,6 +17,8 @@ Ich sträube mich seit längerem dagegen, in meinen Augen preislich völlig übe
 (mehr als 10 Cent für die Übertragung von schlappen 160 Byte Nutzdaten war schon vor 20 Jahren ENORM...). 
 Leider lässt sich das aber nicht immer vermeiden, etwa weil ich gerade in telefonieren kann 
 (weil ich z.B. in einer Vorlesung sitze) und ich weiß, dass der Empfänger seine Emails nur unregelmäßig abruft...
+<!--more-->
+
 
 Da mich sowieso eine Onlineflat (O2 Internet-Pack M) für mein Samsung Galaxy S besitze, habe ich mich in letzter 
 Zeit etwas umgeschaut, ob ich im Internet einen Anbieter finde, bei dem ich SMS zumindest etwas günstiger als 

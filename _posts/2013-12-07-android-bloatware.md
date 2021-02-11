@@ -12,22 +12,13 @@ tags:        [Android, Bloatware]
 img:
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
-
 Most Android devices today ship with a lot of apps pre-installed by Google and
 the device's vendor. These apps are often useless (at least for me), require a lot of permissions, and cannot
 be easily deinstalled. Such "Bloatware" was one of many reasons for me to switch from
 Windows to Linux 8 years ago. Now the situation on Linux-based Android feels 
 even worse than it was/is with Windows, were you could at least deinstall the
 programs, or -- even better -- go for a clean installation. 
+<!--more-->
 
 I don't use many Google services, as I run my own mail server and my contacts
 and calendars are synced with my private ownCloud instance. So I don't need the

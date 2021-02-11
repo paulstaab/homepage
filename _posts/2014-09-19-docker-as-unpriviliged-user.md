@@ -19,6 +19,7 @@ for an malicious application to free itself from the containers restrictions and
 mess with the host system. Unfortunately, up to now not many people seem to
 bother, and most images at the [Dockerhub](https://registry.hub.docker.com) (at
 least the ones I looked at...) seem to be running as root anyway.
+<!--more-->
 
 It is quite easy to create an unprivileged user in an docker file. Just create
 the user using the utils of the underlying distribution, e.g. 

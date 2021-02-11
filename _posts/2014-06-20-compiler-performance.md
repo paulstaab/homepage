@@ -17,6 +17,7 @@ I was curios how different compilers and the optimization options affect the
 speed of my DNA simulation program scrm. There are almost no hard computations
 in scrm; the bottleneck when running the program is reading and modifying
 memory, so there might not be much for compilers to optimize. 
+<!--more-->
 
 I benchmarked the runtime of 
 {% highlight bash %}
