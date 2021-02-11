@@ -49,7 +49,7 @@ output <-  foreach(i=folders, .combine=c) %dopar% {
 {% endhighlight %}
 
 <h2>Now running it on superMUC...</h2>
-The really tricky part was now to write a "job command file", which are instructions for superMUC's <a href="http://www.lrz.de/services/compute/supermuc/loadleveler">loadleveler</a> how the job should be run. For us, this means it should reserve a certain number of nodes, start a doRedis node master on every node and afterwards execute the script. After lots of trail-and-error, this file works quite well for me:
+The really tricky part was now to write a "job command file", which are instructions for superMUC's loadleveler how the job should be run. For us, this means it should reserve a certain number of nodes, start a doRedis node master on every node and afterwards execute the script. After lots of trail-and-error, this file works quite well for me:
 
 {% highlight bash %}
 #!/bin/bash

@@ -59,4 +59,4 @@ also has a few drawbacks:
   update` throwing an error.
 
 Some tests I made about unprivileged users in docker are available at
-[GitHub](https://github.com/paulstaab/docker-tests/tree/master/nonroot_user).
+GitHub.
