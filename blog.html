@@ -5,7 +5,7 @@ permalink: /blog/index.html
 ---
 
 
-    {% for post in site.posts %}
+    {% for post in site.posts | sort: 'date' | reverse %}
 	<!-- Blog Post -->
 	{% if post.img.file %}
 	<a href="{{ post.url | prepend: site.baseurl }}">
