@@ -1,0 +1,35 @@
+--- 
+title: "WLAN-Abbr&uuml;che meiner Fritz!Box"
+author: Paul
+type: post
+layout: post
+categories:     
+- Linux & Open Source
+- blog
+---
+Ich bin gerade etwas ratlos:
+
+Seit einigen Wochen leiden meine Mitbewohner und ich unter häufigen, unregelmäßigen Abbrüchen der WLAN-Verbindung unserer Computer zu unserer Fritz!Box 7240. Zuerst besteht keine Verbindung mehr zum Netzwerk, kurz später meldet der Computer den Verlust der WLAN-Verbindung und muss sich komplett neu einwählen, was ungewöhnlich lang dauert. Insgesamt muss man 2-3 Minuten warten, bis man wieder Netz hat.
+
+Teils passiert das nur einmal am Tag, teils aber auch alle 5 Minuten, so das selbst surfen quasi unmöglich wird. Wie nervig das ist, muss ich wohl kaum erwähnen.
+
+Das Log der Box zeigt dazu jeweils die Einträge (wobei der 2. nicht immer erscheint):
+<pre>27.01.11 21:24:27 WLAN-Station abgemeldet.
+                  Name: XXX, MAC-Adresse: 00:16:EA:XX:XX:XX.
+27.01.11 21:24:27 WLAN-Anmeldung ist gescheitert: Autorisierung fehlgeschlagen.
+                  Name: XXX, MAC-Adresse: 00:16:EA:XX:XX:XX.
+27.01.11 21:24:27 WLAN-Station angemeldet.
+                  Name: XXX, IP-Adresse: 192.168.120.102,
+                  MAC-Adresse: 00:16:EA:XX:XX:XX, Geschwindigkeit 130 MBit/s.
+</pre>
+Da mehr als 5 verschiedene Computer mit unterschiedlichen Betriebssystem (Win XP bis 7 und Ubuntu) und WLAN-Chips betroffen sind, habe ich clientseitige Probleme recht schnell ausgeschlossen. Umfangreiches herumspielen an den WLAN-Einstellungen der Fritz!Box brachte auch rein gar nichts. Also vermutete ich einen Hardwaredefekt oder einen Bug in der Firmware.
+
+Also habe ich Kontakt zu meines ISP 1und1 und zu AVM (Hersteller der Fritz!Box) aufgenommen. AVM hat sich nicht gerade mit Ruhm bekleckert und mir auf eine detaillierte Problembeschreiben mit einer ellenlangen Standard-Email geantwortet. Darin wurde ich aufgefordert, zahlreiche Einstellungen zu testen, von denen ich bei den meisten schon geschrieben hatte, dass sie nichts bringen. Beeindruckt hat mich dagegen 1und1. Zuerst hatte ich eine - von den Problem überfordert wirkende - Mitarbeiterin des Kundendienstes an der Leitung, die mit mir nach einigem hin und her einen Termin vereinbarte, an dem ich ein Techniker zurückrufen sollte. Das klappt - entgegen meinen Vermutungen - auch problemlos, und der erstaunlich kompetente Techniker sagte mir nach wenigen Minuten einen Austausch der Fritz!Box gegen ein Ersatzmodell zu.
+
+Diese traf auch 2 Werktage später ein, scheint aber leider die selben Probleme zu haben :( Noch dazu habe ich diesmal auf ein Firmwareupdate verzichtet, so das die Box noch mit Version 73.04.80 läuft, die meiner Erinnerung nach früher problemlos funktionierte. Also sollten vermutlich auch Hardwaredefekt &amp; Firmwarefehler als Fehlerquellen ausscheiden. Was die Frage aufwirft, woran es dann überhaupt noch liegen könnte.
+
+Stark gestiegene Störstrahlung? Mein PC empfängt 6 verschiedene WLAN-Netz meinst schwacher Signalstärke in der Umgebung, das sollte eigentlich kein größeres Problem sein. Ansonsten haben wir noch eine Mikrowelle und ein DECT-Telefon, die haben das WLAN in den 1,5 Jahren, die wir schon hier wohnen, nicht beeindruckt.
+
+Doch clientseitige Probleme? Erscheint mir weiterhin unwahrscheinlich...
+
+Ich muss jetzt wohl doch eine Antwort-Mail an AVM schreiben... Würde mich nicht wundern, wenn heute Nacht ein paar  schöne bunte Cat5-Netzwerkkabel eine tragende Rolle in meinen Träumen einnehmen.

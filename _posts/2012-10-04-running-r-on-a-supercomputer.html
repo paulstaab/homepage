@@ -1,0 +1,142 @@
+--- 
+title: Running R on a Supercomputer
+author: Paul
+categories: 
+- Science
+- R
+- blog
+type: post
+layout: post
+img:
+---
+
+<p>After literally months of trial and error, I finally managed to run a large analysis using our program <a href="http://evol.bio.lmu.de/_statgen/software/jaatha/">Jaatha</a> on my new local supercomputer, <a href="http://de.wikipedia.org/wiki/SuperMUC">superMUC</a>. Jaatha is written in <a href="http://www.r-project.org/">R</a> (with the performance critical part implemented in C and C++) and normally does not require a super computer at all. However, we wanted to conduct a huge <a href="https://en.wikipedia.org/wiki/Likelihood-ratio_test">likelihood ratio test</a> using a computationally demanding finite sites model; so it came in handy when Europe's fastest computer opened just a few kilometers away. As there is very little written about running R on a supercomputer, I want to share my solution here so that it may hopefully be a bit easier for others to do something similar.</p>
+
+<h2>The Parallelization Model</h2>
+<p>SuperMUC consists of over 18.000 nodes, each of which I imagine of as a separate little computer with 16 cpu cores and it's own RAM. The nodes are connected through a fast network and share a (network) hard disk. As far a I know most supercomputers are build in a similar way.</p>
+
+<p>Within a node, different processes can communicate quite fast using the memory, while the commutation of processes running on different nodes has to go over the network and therefore is much slower. Hence, it is quite nice if you can do a "two step" parallelization: First a "grand master" process distributes big tasks to a "node master" processes on each node. This tasks should be relative autonomous, so that there is only very little communication between the grand master and the node masters needed. Each node master now creates 16 Workers and distributes its big task on them. Heavy communication between the node master and the workers is not a performance problem here.</p>
+
+<h2>Implementation in R</h2>
+<p>Luckily, doing an LRT with Jaatha fitted quite well into this model, so that I could implement it without big changes to Jaatha's algorithm. An easy way to parallelize side effect free loops in R is the awesome <a href="http://cran.r-project.org/web/packages/foreach/index.html">foreach</a> package. Using it, you basically only have to replace the existing loops with a foreach loop (as explained in foreach's vignette) and choose one of several parallelization backends. I use two different backends, namely <a href="http://cran.r-project.org/web/packages/doRedis/index.html">doRedis</a> for the <em>grand master to node master</em> connection and <a href="http://cran.r-project.org/web/packages/doMC/index.html">doMC</a> for the <em>node master to worker</em> one.
+
+<ul>
+  <li><strong>doMC</strong> is the "simpler" of the two (simpler to use at least). It is using RAM for the communication between (node) master and workers. Hence it is amazingly fast but works only within nodes. For me, it always worked right out of the box and I can really recommend using it when ever possible.</li>
+  <li><strong>doRedis</strong> seems to be more complex. It uses the <a href="http://redis.io">redis</a> database for the interprocess communication, which is a quite nice idea because it is a database design for (a) resting in RAM rather than an slow hard disks and (b) for being accessed over network. However, you have to set a redis server first. On superMUC, you can load redis with "module load redis". Additionally to setting the two options mentioned in its vignette, I also changed all the files mentioned in the config file to point to ~/.redis/ because /var is not user writable on superMUC.</li>
+</ul>
+
+With all that, my main R script looked like this:
+{% highlight r %}
+library(doRedis, quietly=T)
+
+# Get command line arguments
+args <- commandArgs(TRUE)
+queue <- args[1]
+cat("Queue: ", queue, "\n")
+threads.per.node <- as.numeric(args[2])
+cat("Workers per Master: ", threads.per.node, "\n")
+
+registerDoRedis(queue)
+# [...]
+output <-  foreach(i=folders, .combine=c) %dopar% {
+   library(doMC, quietly=T)
+   registerDoMC(threads.per.node)
+   # [...]
+   inner.output <- foreach(i=folders, .combine=rbind) %dopar% {
+      # [...]
+   }
+}
+{% endhighlight %}
+
+<h2>Now running it on superMUC...</h2>
+The really tricky part was now to write a "job command file", which are instructions for superMUC's <a href="http://www.lrz.de/services/compute/supermuc/loadleveler">loadleveler</a> how the job should be run. For us, this means it should reserve a certain number of nodes, start a doRedis node master on every node and afterwards execute the script. After lots of trail-and-error, this file works quite well for me:
+
+{% highlight bash %}
+#!/bin/bash
+
+# Instructions for the loadleveler
+#@ wall_clock_limit = 48:00:00
+#@ job_name = LRT-4par-1-100
+#@ node = 200
+#@ tasks_per_node = 1
+#@ initialdir = $(home)/LRT-4par
+#@ job_type=MPICH
+#@ class = general
+#@ output = logs/$(job_name)-log-$(jobid)
+#@ error = logs/$(job_name)-err-$(jobid)
+#@ notification=always
+#@ notify_user=xxx@bio.lmu.de
+#@ restart = no
+#@ queue
+. /etc/profile
+. /etc/profile.d/modules.sh
+
+workers_per_task=16
+rscript=/lrz/sys/applications/R/2.14.0_shared/bin/Rscript
+
+# Load R and redis
+echo "Loading Modules..."
+module load R/serial/2.14
+module load redis
+
+# Set some variables
+wd=$LOADL_STEP_INITDIR
+runfile=$wd/runfile-$LOADL_STEP_ID
+server_node=`hostname`
+job_name=$LOADL_JOB_NAME
+
+echo "Total Number of Tasks: $LOADL_TOTAL_TASKS"
+echo "Tasks per Node: $tasks_per_node"
+
+# Start the redis server
+echo "Starting the redis server..."
+redis-server ~/.redis/redis.conf
+
+# Start the workers
+echo "Starting workers..."
+for i in `seq 1 $LOADL_TOTAL_TASKS`
+do
+        echo "cd $wd; $rscript doRedis_addNode.R $server_node $job_name $i" &gt;&gt; $runfile
+done
+
+ksh -c "/opt/ibmll/LoadL/resmgr/full/samples/autonomous/autonomous_master.ksh -f $runfile" &amp;
+
+# Work!
+echo "Staring to work..."
+$rscript LRT_4par.R $job_name $workers_per_task
+
+echo "Finshed"
+{% endhighlight %}
+
+<p>where LRT_4par.R is the main script above and the autonomous_master.ksh is an
+example script from IBM that I use to execute the doRedis_addNode.R script on
+every node. The latter looks like this:</p>
+
+{% highlight r %}
+#/usr/bin/Rscript --vanilla
+library('doRedis', quietly=T)
+
+cat("Node: ", Sys.info()['nodename'], "\n")
+
+args <- commandArgs(TRUE)
+server <- as.character(args[1])
+cat("Server:", server, "\n")
+queue <- as.character(args[2])
+cat("Queue:", queue, "\n")
+#threads.per.node <- as.numeric(args[3])
+threads.per.node <- 1
+cat("Threads:", threads.per.node, "\n")
+
+startLocalWorkers(n=threads.per.node, queue=queue, host=server)
+cat("\n", threads.per.node," local thread(s) started.\n")
+Sys.sleep(500)
+{% endhighlight %}
+
+<p>This will run our script on 200 nodes. It is can also easily be adapted to
+other situations, for example if you have a one step parallelization with the
+grand master controlling many workers, you can set threads.per.node in the
+addNodes script to 16 and skip the doMC part in the main script.</p>
+
+<p>I hope the rest of the script is pretty self explaining. If you have any
+question or comment about my approach, please post it on
+<em> <a href="https://plus.google.com/104062337180068180313/posts/WtE9cNgWhxh">Google+</a>.</em></p>

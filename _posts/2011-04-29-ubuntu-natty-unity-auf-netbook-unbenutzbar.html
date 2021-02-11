@@ -1,0 +1,19 @@
+--- 
+author: Paul
+title: "Ubuntu Natty: Unity auf Netbook unbenutzbar? [Update]"
+type: post
+layout: post
+status: publish
+categories:     
+- Linux & Open Source
+- blog
+---
+Eigentlich warte ich üblicherweise nach dem Erscheinen einer neuen Ubuntuversion einige Wochen, bevor ich upgrade. Vielleicht hätte ich dabei bleiben sollen; da ich aber einige Probleme auf meinem Netbook (ein Samsung NC10) hatte, habe ich gestern direkt bei erscheinen von Ubuntu 11.04 "Natty Narwhal" das Upgrade angestoßen. Das Problem war vor allem, das ich zum teXen meiner Diplomarbeit gerne mit 2 Monitoren (den Netbookbildschrim und einem externen Monitor) arbeite, was unter 10.10 und Unity nicht vernünftig  (d.h. unterschiedliche Auflösungen auf beiden Monitoren) funktionierte. Deshalb habe ich Gnome als Desktopoberfläche verwendet, das aber - aus nicht nachvollziehbaren Gründen - immer 2-3 Minuten brauchte, um beim Starten den Desktop anzuzeigen...
+
+Neben vielen anderen umbauten sollte insbesondere auch diese Multimonitorfähigkeit von Unity in Natty verbesserte werden, was mich zu dem schnellen Upgrade motivierte. Das funktioniert einem kurzen Test zufolge auch, leider beanspruchte das Rendern der Oberfläche via Compiz nun permanent 99% meiner CPU. Grafische Effekte sind ja ganz nett, aber das ist dann vielleicht doch etwas übertrieben... Benutzbar ist das so auf jeden Fall nicht.
+
+Hat noch jemand ähnliche Probleme auf seinem Netbook? Wurde durch den Umstieg von Mutter auf Compiz wirklich die Lauffähigkeit auf Netbooks total zerstört? Das kann ich mir aufgrund der hohen Verbreitung der quasi identischen Hardware eigentlich nicht vorstellen...
+
+Zur Zeit nutzte ich bis auf weiteres den 2D-Fallback von Natty, der aber weiterhin 2-3min braucht, um den Desktop anzuzeigen bzw Nautilus zu öffnen...
+
+[Update] Mittlerweile bin ich dank der aktuellen C't etwas schlauer. Anscheinend soll das 3D-Unity auf Intel-Chips mit mindestens der Zahl 950 im Namen flüssig laufen. Im Umkehrschluss heißt das wohl, dass ich auf meinem NC10 mit 945GME Pech gehabt habe. Mit dem Paket "unity-2d" kann man sich aber eine gut benutzbare 2D-Version von Unity installieren. Diese läuft gefühlt etwas langsamer als (Mutter-)Unity unter 10.10, lässt ich aber besser benutzen, u.a. wegen dem sich automatisch ausblendenden Starter. Großer Nachteil ist, dass sich unity-2d noch weniger konfigurieren lässt als die 3D-Version. Mittlerweile lassen sich aber anders als in der C't beschrieben zumindest die Symbole im Starter per Drag 'n Drop anordnen. [/Update]
