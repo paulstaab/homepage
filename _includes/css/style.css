@@ -374,6 +374,7 @@ table {
   padding: 0; 
   margin-left: auto; 
   margin-right: auto;
+  margin-bottom: .5rem;
 }
 
 table tr {
