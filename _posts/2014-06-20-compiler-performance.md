@@ -25,11 +25,12 @@ scrm 10 10 -r 1000 1000000 -seed 20
 using the C++ version of gcc 4.8.2 and clang 3.4 with different optimization levels. 
 The results are:
 
-         g++     clang++
-    O0   152s    150s
-    O1    31s     78s 
-    O2    26s     34s
-    O3    25s     34s
+|    |  g++ | clang++ |
+| -- | ---- | ------- |
+| O0 | 152s |    150s |
+| O1 |  31s |     78s |
+| O2 |  26s |     34s |
+| O3 |  25s |     34s |
 
 Seems that increasing the optimization level up to `O2` really helps on both
 compilers, and further increasing it to `O3` only gives a minor speed boost. On
