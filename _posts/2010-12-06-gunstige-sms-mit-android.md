@@ -5,8 +5,7 @@ type: post
 layout: post
 status: publish
 categories:     
-- Linux & Open Source
-- blog
+- Open Source
 image:
   feature:    android.jpg
   credit:     asirap (CC-BY-NC-SA) 

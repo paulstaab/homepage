@@ -4,8 +4,7 @@ author:      Paul
 title:       "Benchmarking C++ Compilers. A Real World Example."
 description: 
 categories:  
-- Linux & Open Source
-- blog
+- Open Source
 tags:        [compiler, benchmark, scrm]
 image:
   feature: 

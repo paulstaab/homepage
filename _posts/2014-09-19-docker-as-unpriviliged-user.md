@@ -5,8 +5,7 @@ date: 2014-09-19 16:54:46
 author: Paul
 description: "Increase the security of docker containers by switching to an unprivileged user."
 categories:  
-  - blog
-  - Linux & Open Source
+  - Open Source
 thumb:
 ---
 
