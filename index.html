@@ -25,6 +25,12 @@ permalink: /
 
     <p>To get in touch, contact me on <a href="https://twitter.com/paulstaab">Twitter</a> or 
        send me an <a id="contact-mail">email</a>.</p>
+
+    <p>
+	{% for network in site.social %}
+	<a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
+	{% endfor %}
+    </p>
   </div>
 </div>
 </div>
